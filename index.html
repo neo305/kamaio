@@ -1,0 +1,45 @@
+﻿<html>
+<head>
+<meta charset="utf-8">
+<title>Kameleon PS4 9.00FW AIO Host</title>
+<link rel="shortcut icon" href="favicon.ico"></link>
+<link rel="stylesheet" href="btn.css">
+<style>
+  body{background-image: url("bg.jpg");
+  color:white;font-size:20px;text-align:center;margin:0;overflow:hidden;background-repeat: repeat;}
+  .info{overflow: hidden;position: fixed;position: absolute;top: 45%;left: 50%;font-size: 25px;font-family: sans-serif;color: #b8b8b8;transform: translate(-50%, -50%);}
+  .button{background-color: white;color: black;height: 5%;width: 13,7%;cursor: pointer;font-size: medium;}
+</style>
+    <script>
+      if (window.applicationCache.status=='0'){window.location.replace("cache.html");}
+    </script>
+</head>
+<body>
+<h1 style='font-size:25px;text-align:center;color:white'>Kameleon PS4 900FW AIO Host</h1>
+<div style="width:100%;font-size:20px;color:white">
+  PS4 Firmware <span id="PS4fw"></span></div>
+  <br>
+<h1 id=KameleonMsg style='font-size:25px;text-align:center;color: orange;'>Main Menu</h1>
+<div style="text-align:center">
+  <br>
+  <a href="./kameleon900/index.html"><button  class="btnkme" onMouseOver="KameleonMsg.innerHTML='Kameleon 900FW Full v4.6 Host'" ; onmouseout="KameleonMsg.innerHTML='Main Menu'" type="button"><B> Kameleon 900 V4.6 </B></button></a>
+  <a href="./leeful900/index.html"><button  class="btnkme" onMouseOver="KameleonMsg.innerHTML='Leeful V4.1U Auto Load GoldHEN v2.1'" ; onmouseout="KameleonMsg.innerHTML='Main Menu'" type="button"><B> Auto Leeful V4.1U </B></button></a>
+  <a href="./leeful900v4/index.html"><button  class="btnkme" onMouseOver="KameleonMsg.innerHTML='Leeful V4 Auto Load GoldHEN v2.0B2'" ; onmouseout="KameleonMsg.innerHTML='Main Menu'" type="button"><B> Auto Leeful V4.0 </B></button></a>
+  <br><br>
+  <a href="./payloads/index.html"><button class="btnkme" onMouseOver="KameleonMsg.innerHTML='Offline Version Of Hybrid Payloads Host (GoldHEN 2.0 Bin Server Compatible)'" ; onmouseout="KameleonMsg.innerHTML='Main Menu'" type="button"><B> Offline PS4 900 Payloads </B></button></a>
+  <a href="./payloads/index-online.html"><button class="btnkme" onMouseOver="KameleonMsg.innerHTML='Online Version Of Hybrid Payloads Host (GoldHEN 2.0 Bin Server Compatible)'" ; onmouseout="KameleonMsg.innerHTML='Main Menu'" type="button"><B> Online PS4 900 Payloads </B></button></a>
+ <br><br>
+ <a href="./trainer/index.html"><button class="btnkme" onMouseOver="KameleonMsg.innerHTML='PS4 Trainer (Tylermods) Offline Method By Kameleon'" ; onmouseout="KameleonMsg.innerHTML='Main Menu'" type="button"><B> PS4 Offline Trainer </B></button></a>
+<br><br>
+</div>
+<br><br>
+<h1 style="text-align:center;font-size:25px;color:white">Massive Thanks - Znullptr, ChendoChap, Specter, Sleirsgoevy, SiSTRo, Al-Azif, PRB-Borg, Leeful, Nazky And Many More...</h1>
+<h1 style="text-align:center;font-size:20px;color:white">https://twitter.com/KameleonRe</h1>
+<script>
+var UA = navigator.userAgent.substring(navigator.userAgent.indexOf('5.0 (') + 19, navigator.userAgent.indexOf(') Apple')).replace("layStation 4/","");
+if (UA == "9.00"){PS4fw.innerHTML="v"+UA+" Detected"};if(UA != "9.00"){PS4fw.innerHTML="Spoofed To v"+UA};
+</script>
+
+</script>
+</body>
+</html>

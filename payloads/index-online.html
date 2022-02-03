@@ -1,0 +1,692 @@
+<html>
+<head>
+<title>Online PS4 900 Payloads</title>
+<link rel="shortcut icon" href="favicon.ico"></link>
+<link rel="stylesheet" href="btn.css">
+<script type="text/javascript" src="index.js"></script>
+<style>
+body{background-image: url("bg.jpg");
+color:orange;font-size:20px;text-align:center;margin:0;overflow:hidden;}
+.info{overflow: hidden;position: fixed;position: absolute;top: 45%;left: 50%;font-size: 25px;font-family: sans-serif;color: #b8b8b8;transform: translate(-50%, -50%);}
+.button{background-color: white;color: black;height: 5%;width: 13,7%;cursor: pointer;font-size: medium;}
+</style>
+
+<script>
+function pldone() {
+  msgs.innerHTML= LoadedMSG;
+}
+</script>
+
+<script src="int64.js"></script>
+<script src="rop.js"></script>
+<script src="kexploit.js"></script>
+<script src="webkit.js"></script>
+
+</head>
+
+<body onload="checkserverstatus();">
+  <h1 id=msgs style='font-size:25px;text-align:center;color:white'>Online PS4 900 Payloads</h1>
+  <button class="btnkme" onMouseOver="msgs.innerHTML='Back to Main Menu'"; onmouseout="msgs.innerHTML='Online PS4 900 Payloads'" onclick="load_mainmenu(); return false">Back to Main Menu</button>
+  <div id=mymenu style="text-align:center">
+    <div text-align= center>Pass = <span id=passCounter></span>&nbsp;&nbsp;:&nbsp;&nbsp;Fail = <span id=failCounter></span></div>
+    <div style="width:100%;font-size:20px;color:white">
+    PS4 Firmware <span id="PS4fw"></span></div>
+    <br>
+    <div id="pldmenu" style=font-size:16px>
+    <button class="btnkme" onMouseOver="msgs.innerHTML='Orbis Tool Box v1190 - By OSM'"; onmouseout="msgs.innerHTML='Online PS4 900 Payloads'" onclick="load_orbistoolbox(); return false">Orbis-Tool-Box</button>
+    <button class="btnkme" onMouseOver="msgs.innerHTML='App-2-Usb - Original Version By Stooged / 9.00 Port By Al Azif'"; onmouseout="msgs.innerHTML='Online PS4 900 Payloads'" onclick="load_app2usb(); return false">App-2-Usb</button>
+    <button class="btnkme" onMouseOver="msgs.innerHTML='App Dumper Only v1.8 - Original Version By xVortex / 9.00 Port Al Azif'"; onmouseout="msgs.innerHTML='Online PS4 900 Payloads'" onclick="load_dumper(); return false">App-Dumper</button>
+    <button class="btnkme" onMouseOver="msgs.innerHTML='Disable-Updates v1.0 - By Al Azif'"; onmouseout="msgs.innerHTML='Online PS4 900 Payloads'" onclick="load_disableupdates(); return false">Disable-Updates</button>
+    <button class="btnkme" onMouseOver="msgs.innerHTML='Enable-Updates v1.0 - By Al Azif'"; onmouseout="msgs.innerHTML='Online PS4 900 Payloads'" onclick="load_enableupdates(); return false">Enable-Updates</button>
+    <button class="btnkme" onMouseOver="msgs.innerHTML='Enable Browser / 9.00 Port Al Azif'"; onmouseout="msgs.innerHTML='Online PS4 900 Payloads'" onclick="load_enablebrowser(); return false">Enable-Browser</button>
+    <button class="btnkme" onMouseOver="msgs.innerHTML='Exit IDU / 9.00 Port Al Azif'"; onmouseout="msgs.innerHTML='Online PS4 900 Payloads'" onclick="load_exitidu(); return false">Exit-IDU</button>
+    <br><br>
+    <button class="btnkme" onMouseOver="msgs.innerHTML='Rifrenamer / 9.00 Port Al Azif'"; onmouseout="msgs.innerHTML='Online PS4 900 Payloads'" onclick="load_rifrenamer(); return false">Rif-Renamer</button>
+    <button class="btnkme" onMouseOver="msgs.innerHTML='Ftp v1.3 - Original Version By xVortex / 9.00 Port By Al Azif'"; onmouseout="msgs.innerHTML='Online PS4 900 Payloads'" onclick="load_ftp(); return false">Ftp-Server</button>
+    <button class="btnkme" onMouseOver="msgs.innerHTML='History-Blocker - v2.0 Original Version By Stooged / 9.00 Port By Al Azif'"; onmouseout="msgs.innerHTML='Online PS4 900 Payloads'" onclick="load_historyblocker(); return false">History-Blocker</button>
+    <button class="btnkme" onMouseOver="msgs.innerHTML='Kernel-Dumper - v1.0 Original Version By Eversion / 9.00 Port By Al Azif'"; onmouseout="msgs.innerHTML='Online PS4 900 Payloads'" onclick="load_kerneldumper(); return false">Kernel-Dumper</button>
+    <button class="btnkme" onMouseOver="msgs.innerHTML='PSN Account Offline Web Activator - By Sleirsgoevy'"; onmouseout="msgs.innerHTML='Online PS4 900 Payloads'" onclick="load_webactivator(); return false">Web-Offline-Activator</button>
+    <button class="btnkme" onMouseOver="msgs.innerHTML='Ps4Debug v1.1.14 - By CTN123'"; onmouseout="msgs.innerHTML='Online PS4 900 Payloads'" onclick="load_ps4debug(); return false">Ps4Debug</button>
+    <button class="btnkme" onMouseOver="msgs.innerHTML='DB-Backup v1.0 - By Leeful / 9.00 Port By Al Azif'"; onmouseout="msgs.innerHTML='Online PS4 900 Payloads'" onclick="load_backup(); return false">DB-Backup</button>
+    <br><br>
+    <button class="btnkme" onMouseOver="msgs.innerHTML='DB-Restore v1.0 - By Leeful / 9.00 Port Al Azif'"; onmouseout="msgs.innerHTML='Online PS4 900 Payloads'" onclick="load_restore(); return false">DB-Restore</button>
+    <button class="btnkme" onMouseOver="msgs.innerHTML='To-Dex v1.0 - By notzecoxao'"; onmouseout="msgs.innerHTML='Online PS4 900 Payloads'" onclick="load_todex(); return false">To-Dex</button>
+    <button class="btnkme" onMouseOver="msgs.innerHTML='WebRTE v1.0 - By PS4 Trainer'"; onmouseout="msgs.innerHTML='Online PS4 900 Payloads'" onclick="load_webrte(); return false">WebRTE</button>
+    <button class="btnkme" onMouseOver="msgs.innerHTML='Permanent UART - 9.00 Port By Al Azif'"; onmouseout="msgs.innerHTML='Online PS4 900 Payloads'" onclick="load_uart(); return false">Permanent-UART</button>
+    <button class="btnkme" onMouseOver="msgs.innerHTML='Disable ASLR - 9.00 Port By Al Azif'"; onmouseout="msgs.innerHTML='Online PS4 900 Payloads'" onclick="load_disableaslr(); return false">Disable-ASLR</button>
+    <button class="btnkme" onMouseOver="msgs.innerHTML='Kernel-Module Dumper -  9.00 Port By Al Azif'"; onmouseout="msgs.innerHTML='Online PS4 900 Payloads'" onclick="load_moduledumper(); return false">Kernel-Module-Dumper</button>
+    </div>
+    <br><br>
+    <a id="linuxl" ><button class="btnkme" onMouseOver="msgs.innerHTML='Linux Vram Loaders Payloads'" ; onmouseout="msgs.innerHTML='Online PS4 900 Payloads'" type="button">Linux Vram Payloads</button></a>
+    <div id="linuxlJ" style="display: none;">
+      <button class="btnkme" onMouseOver="msgs.innerHTML='Linux Vram Loader 1GB - 9.00 Port By NazkyYT'"; onmouseout="msgs.innerHTML='Online PS4 900 Payloads'" onclick="load_Linux1gb(); return false">Linux 1GB Vram</button>
+      <button class="btnkme" onMouseOver="msgs.innerHTML='Linux Vram Loader 2GB - 9.00 Port By NazkyYT'"; onmouseout="msgs.innerHTML='Online PS4 900 Payloads'" onclick="load_Linux2gb(); return false">Linux 2GB Vram</button>
+      <button class="btnkme" onMouseOver="msgs.innerHTML='Linux Vram Loader 3GB - 9.00 Port By NazkyYT'"; onmouseout="msgs.innerHTML='Online PS4 900 Payloads'" onclick="load_Linux3gb(); return false">Linux 3GB Vram</button>
+      <button class="btnkme" onMouseOver="msgs.innerHTML='Linux Vram Loader 4GB - 9.00 Port By NazkyYT'"; onmouseout="msgs.innerHTML='Online PS4 900 Payloads'" onclick="load_Linux4gb(); return false">Linux 4GB Vram</button>
+      <button class="btnkme" onMouseOver="msgs.innerHTML='Linux Vram Loader 5GB - 9.00 Port By NazkyYT'"; onmouseout="msgs.innerHTML='Online PS4 900 Payloads'" onclick="load_Linux5gb(); return false">Linux 5GB Vram</button>
+    </div>
+    <a id="gtavl" ><button class="btnkme" onMouseOver="msgs.innerHTML='Grand Theft Auto V Mod Menu Payloads'" ; onmouseout="msgs.innerHTML='Online PS4 900 Payloads'" type="button">GTA V Mod Payloads</button></a>
+    <div id="gtavlJ" style="display: none;">
+      <button class="btnkme" onMouseOver="msgs.innerHTML='BeefQueefMod For GTA V Update v1.33 - By GraFfiX'"; onmouseout="msgs.innerHTML='Online PS4 900 Payloads'" onclick="load_gtavbeefqueef133(); return false">BeefQueefMod GTAV v1.33</button>
+      <button class="btnkme" onMouseOver="msgs.innerHTML='BeefQueefMod For GTA V Update v1.34 - By GraFfiX'"; onmouseout="msgs.innerHTML='Online PS4 900 Payloads'" onclick="load_gtavbeefqueef134(); return false">BeefQueefMod GTAV v1.34</button>
+      <button class="btnkme" onMouseOver="msgs.innerHTML='BeefQueefMod Thief-Edition For GTA V Update v1.38d  - By GraFfiX'"; onmouseout="msgs.innerHTML='Online PS4 900 Payloads'" onclick="load_gtavbeefqueef138(); return false">BeefQueefMod GTAV v1.38d</button>
+      <br><br>
+      <button class="btnkme" onMouseOver="msgs.innerHTML='WildeModz v1.4 For GTA V Update v1.38 - By Wilde Modz'"; onmouseout="msgs.innerHTML='Online PS4 900 Payloads'" onclick="load_gtavwildemodz138(); return false">WildeModz GTAV v1.38</button>
+      <button class="btnkme" onMouseOver="msgs.innerHTML='Expulsion Mod Menu v3.0 For GTA V Update v1.38 - By LushModz'"; onmouseout="msgs.innerHTML='Online PS4 900 Payloads'" onclick="load_gtavexpulsion138(); return false">Expulsion Mod v3.0 GTAV v1.38</button>
+    </div>
+    <a id="rdr2l" ><button class="btnkme" onMouseOver="msgs.innerHTML='Red Dead Redemption II Mod Menu Payloads'" ; onmouseout="msgs.innerHTML='Online PS4 900 Payloads'" type="button">RDR II Mod Payloads</button></a>
+    <div id="rdr2lJ" style="display: none;">
+      <button class="btnkme" onMouseOver="msgs.innerHTML='Red Dead Redemption II Mod v1.00 - Original Version By RF0oDxM0Dz'"; onmouseout="msgs.innerHTML='Online PS4 900 Payloads'" onclick="load_rdr2_100(); return false">RDR II Mod v1.00</button>
+      <button class="btnkme" onMouseOver="msgs.innerHTML='Red Dead Redemption II Mod v1.13  - Original Version By RF0oDxM0Dz'"; onmouseout="msgs.innerHTML='Online PS4 900 Payloads'" onclick="load_rdr2_113(); return false">RDR II Mod v1.13</button>
+      <button class="btnkme" onMouseOver="msgs.innerHTML='Red Dead Redemption II Mod v1.19  - Original Version By RF0oDxM0Dz'"; onmouseout="msgs.innerHTML='Online PS4 900 Payloads'" onclick="load_rdr2_119(); return false">RDR II Mod v1.19</button>
+      <button class="btnkme" onMouseOver="msgs.innerHTML='Red Dead Redemption II Mod v1.24  - Original Version By RF0oDxM0Dz'"; onmouseout="msgs.innerHTML='Online PS4 900 Payloads'" onclick="load_rdr2_124(); return false">RDR II Mod v1.24</button>
+      <button class="btnkme" onMouseOver="msgs.innerHTML='Red Dead Redemption II Mod v1.29  - Original Version By RF0oDxM0Dz'"; onmouseout="msgs.innerHTML='Online PS4 900 Payloads'" onclick="load_rdr2_129(); return false">RDR II Mod v1.29</button>
+    </div>
+    <div id="Backl" style="display: none;">
+      <br>
+      <br>
+      <a ><button class="btnkme" onMouseOver="msgs.innerHTML='Go Back'" ; onmouseout="msgs.innerHTML='Online PS4 900 Payloads'" type="button">Back</button></a>
+    </div>
+    <br>
+    <p style="text-align:center;font-size:25px;color:white">Massive Thanks - Znullptr, ChendoChap, Specter, Sleirsgoevy, theflow0, SiSTRo, Al-Azif, PRB-Borg, Leeful, Nazky And Many More...</p>
+    <p style="text-align:center;font-size:20px;color:white">https://twitter.com/KameleonRe</p>
+    </div>
+    <script>
+    var UA = navigator.userAgent.substring(navigator.userAgent.indexOf('5.0 (') + 19, navigator.userAgent.indexOf(') Apple')).replace("layStation 4/","");
+    if (UA == "9.00"){PS4fw.innerHTML="v"+UA+" Detected"};if(UA != "9.00"){PS4fw.innerHTML="Spoofed To v"+UA};
+    </script>
+    <script>
+    if (localStorage.passcount == null || localStorage.passcount == undefined) localStorage.passcount=0;
+     if (localStorage.passCounter == null || localStorage.passCounter == undefined ){
+      passCounter.innerHTML=localStorage.passcount;}
+    if (localStorage.failcount == null || localStorage.failcount == undefined) localStorage.failcount=0;
+     if (localStorage.failCounter == null || localStorage.failCounter == undefined ){
+      failCounter.innerHTML=localStorage.failcount;}
+</script>
+    </script>
+
+    <script> //Organize more the payloads menu Method By NazkyYT Modded By KameleonReloaded
+      var GBl = document.getElementById("Backl");
+      var plmenu = document.getElementById("pldmenu");
+      var linuxl = document.getElementById("linuxl");
+      var linuxlJ = document.getElementById("linuxlJ");
+      var gtavl = document.getElementById("gtavl");
+      var gtavlJ = document.getElementById("gtavlJ");
+      var rdr2l = document.getElementById("rdr2l");
+      var rdr2lJ = document.getElementById("rdr2lJ");
+    
+      linuxl.onclick = function() {
+        plmenu.style.display = "none";
+        linuxl.style.display = "none";
+        gtavl.style.display = "none";
+        rdr2l.style.display = "none";
+        linuxlJ.style.display = "unset";
+        GBl.style.display = "unset";
+        
+      }
+      gtavl.onclick = function() {
+        plmenu.style.display = "none";
+        linuxl.style.display = "none";
+        gtavl.style.display = "none";
+        rdr2l.style.display = "none";
+        gtavlJ.style.display = "unset";
+        GBl.style.display = "unset";
+        
+      }
+      rdr2l.onclick = function() {
+        plmenu.style.display = "none";
+        linuxl.style.display = "none";
+        gtavl.style.display = "none";
+        rdr2l.style.display = "none";
+        rdr2lJ.style.display = "unset";
+        GBl.style.display = "unset";
+        
+      }
+      GBl.onclick = function() {
+        plmenu.style.display = "unset";
+        linuxl.style.display = "unset"
+        gtavl.style.display = "unset"
+        rdr2l.style.display = "unset"
+        linuxlJ.style.display = "none";
+        gtavlJ.style.display = "none";
+        rdr2lJ.style.display = "none";
+        GBl.style.display = "none";
+      }
+      
+      
+      </script>
+
+<script>
+var exec_type = "";
+//var PLfile = "";
+
+function load_mainmenu(){
+msgs.innerHTML="<h1 style='font-size:25px;text-align:center;'>Going to Main Menu!!!</h1>";
+var link = document.createElement('a');
+document.body.appendChild(link);
+link.href = '../index.html';
+link.click();  
+}
+
+function load_webactivator(){
+msgs.innerHTML="<h1 style='font-size:25px;text-align:center;'>Loading PSN Account Offline Web Activator. Please wait 20-30 seconds!!!</h1>";
+var link = document.createElement('a');
+document.body.appendChild(link);
+link.href = '900.html';
+link.click();
+}
+
+function load_orbistoolbox(){
+msgs.innerHTML="<h1 style='font-size:25px;text-align:center;'>Loading Orbis Tool Box v1190. Please wait 20-30 seconds!!!</h1>";
+LoadedMSG="Orbis Tool Box v1190 Loaded";
+PLfile = "pl_OrbisToolbox.bin";
+if (sessionStorage.plrunmethod == "sandboxesc")
+{
+exec_type = "payload";
+loadPayloadData();
+}
+else if (sessionStorage.plrunmethod == "ghen20binserver")
+{
+LoadpaylodsGhen20(PLfile);
+}
+}
+
+function load_disableupdates(){
+msgs.innerHTML="<h1 style='font-size:25px;text-align:center;'>Loading Disable-Updates. Please wait 20-30 seconds!!!</h1>";
+LoadedMSG="Disable-Updates Loaded";
+PLfile = "pl_disableupdates.bin";
+
+if (sessionStorage.plrunmethod == "sandboxesc")
+{
+exec_type = "payload";
+loadPayloadData();
+}
+else if (sessionStorage.plrunmethod == "ghen20binserver")
+{
+LoadpaylodsGhen20(PLfile);
+}
+}
+
+function load_enableupdates(){
+msgs.innerHTML="<h1 style='font-size:25px;text-align:center;'>Loading Enable-Updates. Please wait 20-30 seconds!!!</h1>";
+LoadedMSG="Enable-Updates Loaded";
+PLfile = "pl_enableupdates.bin";
+if (sessionStorage.plrunmethod == "sandboxesc")
+{
+exec_type = "payload";
+loadPayloadData();
+}
+else if (sessionStorage.plrunmethod == "ghen20binserver")
+{
+LoadpaylodsGhen20(PLfile);
+}
+}
+
+function load_backup(){
+msgs.innerHTML="<h1 style='font-size:25px;text-align:center;'>Loading DB-Backup. Please wait 20-30 seconds!!!</h1>";
+LoadedMSG="DB-Backup Loaded";
+PLfile = "pl_backup.bin";
+if (sessionStorage.plrunmethod == "sandboxesc")
+{
+exec_type = "payload";
+loadPayloadData();
+}
+else if (sessionStorage.plrunmethod == "ghen20binserver")
+{
+LoadpaylodsGhen20(PLfile);
+}
+}
+
+function load_app2usb(){
+msgs.innerHTML="<h1 style='font-size:25px;text-align:center;'>Loading App-To-Usb. Please wait 20-30 seconds!!!</h1>";
+LoadedMSG="App-To-Usb Loaded";
+PLfile = "pl_app2usb.bin";
+if (sessionStorage.plrunmethod == "sandboxesc")
+{
+exec_type = "payload";
+loadPayloadData();
+}
+else if (sessionStorage.plrunmethod == "ghen20binserver")
+{
+LoadpaylodsGhen20(PLfile);
+}
+}
+
+function load_dumper(){
+msgs.innerHTML="<h1 style='font-size:25px;text-align:center;'>Loading App Dumper. Please wait 20-30 seconds!!!</h1>";
+LoadedMSG="App Dumper Loaded";
+PLfile = "pl_appdumper.bin";
+if (sessionStorage.plrunmethod == "sandboxesc")
+{
+exec_type = "payload";
+loadPayloadData();
+}
+else if (sessionStorage.plrunmethod == "ghen20binserver")
+{
+LoadpaylodsGhen20(PLfile);
+}
+}
+
+function load_exitidu(){
+msgs.innerHTML="<h1 style='font-size:25px;text-align:center;'>Loading Exitidu. Please wait 20-30 seconds!!!</h1>";
+LoadedMSG="Exitidu Loaded";
+PLfile = "pl_exitidu.bin";
+if (sessionStorage.plrunmethod == "sandboxesc")
+{
+exec_type = "payload";
+loadPayloadData();
+}
+else if (sessionStorage.plrunmethod == "ghen20binserver")
+{
+LoadpaylodsGhen20(PLfile);
+}
+}
+
+function load_rifrenamer(){
+msgs.innerHTML="<h1 style='font-size:25px;text-align:center;'>Loading Rifrenamer. Please wait 20-30 seconds!!!</h1>";
+LoadedMSG="Rifrenamer Loaded";
+PLfile = "pl_rifrenamer.bin";
+if (sessionStorage.plrunmethod == "sandboxesc")
+{
+exec_type = "payload";
+loadPayloadData();
+}
+else if (sessionStorage.plrunmethod == "ghen20binserver")
+{
+LoadpaylodsGhen20(PLfile);
+}
+}
+
+function load_enablebrowser(){
+msgs.innerHTML="<h1 style='font-size:25px;text-align:center;'>Loading Enable-Browser. Please wait 20-30 seconds!!!</h1>";
+LoadedMSG="Enable-Browser Loaded";
+PLfile = "pl_enablebrowser.bin";
+if (sessionStorage.plrunmethod == "sandboxesc")
+{
+exec_type = "payload";
+loadPayloadData();
+}
+else if (sessionStorage.plrunmethod == "ghen20binserver")
+{
+LoadpaylodsGhen20(PLfile);
+}
+}
+
+function load_ftp(){
+msgs.innerHTML="<h1 style='font-size:25px;text-align:center;'>Loading Ftp. Please wait 20-30 seconds!!!</h1>";
+LoadedMSG="Ftp Loaded";
+PLfile = "pl_ftp.bin";
+if (sessionStorage.plrunmethod == "sandboxesc")
+{
+exec_type = "payload";
+loadPayloadData();
+}
+else if (sessionStorage.plrunmethod == "ghen20binserver")
+{
+LoadpaylodsGhen20(PLfile);
+}
+}
+
+function load_gtavbeefqueef133(){
+msgs.innerHTML="<h1 style='font-size:25px;text-align:center;'>Loading BeefQueefMod 1.33. Please wait 20-30 seconds!!!</h1>";
+LoadedMSG="BeefQueefMod 1.33 Loaded";
+PLfile = "pl_BeefQueefMod133.bin";
+if (sessionStorage.plrunmethod == "sandboxesc")
+{
+exec_type = "payload";
+loadPayloadData();
+}
+else if (sessionStorage.plrunmethod == "ghen20binserver")
+{
+LoadpaylodsGhen20(PLfile);
+}
+}
+
+function load_gtavbeefqueef134(){
+msgs.innerHTML="<h1 style='font-size:25px;text-align:center;'>Loading BeefQueefMod 1.34. Please wait 20-30 seconds!!!</h1>";
+LoadedMSG="BeefQueefMod 1.34 Loaded";
+PLfile = "pl_BeefQueefMod134.bin";
+if (sessionStorage.plrunmethod == "sandboxesc")
+{
+exec_type = "payload";
+loadPayloadData();
+}
+else if (sessionStorage.plrunmethod == "ghen20binserver")
+{
+LoadpaylodsGhen20(PLfile);
+}
+}
+
+function load_gtavbeefqueef138(){
+msgs.innerHTML="<h1 style='font-size:25px;text-align:center;'>Loading BeefQueefMod 1.38 Thief-Edition. Please wait 20-30 seconds!!!</h1>";
+LoadedMSG="BeefQueefMod 1.38 Thief-Edition Loaded";
+PLfile = "pl_BeefQueefMod138.bin";
+if (sessionStorage.plrunmethod == "sandboxesc")
+{
+exec_type = "payload";
+loadPayloadData();
+}
+else if (sessionStorage.plrunmethod == "ghen20binserver")
+{
+LoadpaylodsGhen20(PLfile);
+}
+}
+
+function load_gtavexpulsion138(){
+msgs.innerHTML="<h1 style='font-size:25px;text-align:center;'>Loading Expulsion V2.0 Mod Menu For GTAV v1.38. Please wait 20-30 seconds!!!</h1>";
+LoadedMSG="Expulsion V2.0 Mod Menu For GTAV v1.38 Loaded";
+PLfile = "pl_LushModz10_138.bin";
+if (sessionStorage.plrunmethod == "sandboxesc")
+{
+exec_type = "payload";
+loadPayloadData();
+}
+else if (sessionStorage.plrunmethod == "ghen20binserver")
+{
+LoadpaylodsGhen20(PLfile);
+}
+}
+
+function load_gtavwildemodz138(){
+msgs.innerHTML="<h1 style='font-size:25px;text-align:center;'>Loading Wilde Modz 1.2 Menu For GTAV v1.38. Please wait 20-30 seconds!!!</h1>";
+LoadedMSG="Wilde Modz V1.3 Menu For GTAV v1.38 Loaded";
+PLfile = "pl_WildeModz14_138.bin";
+if (sessionStorage.plrunmethod == "sandboxesc")
+{
+exec_type = "payload";
+loadPayloadData();
+}
+else if (sessionStorage.plrunmethod == "ghen20binserver")
+{
+LoadpaylodsGhen20(PLfile);
+}
+}
+
+function load_rdr2_100(){
+msgs.innerHTML="<h1 style='font-size:25px;text-align:center;'>Loading Read Dead Redemption II Mod v1.00. Please wait 20-30 seconds!!!</h1>";
+LoadedMSG="Read Dead Redemption II Mod v1.00 Loaded";
+PLfile = "pl_rdr2100.bin";
+if (sessionStorage.plrunmethod == "sandboxesc")
+{
+exec_type = "payload";
+loadPayloadData();
+}
+else if (sessionStorage.plrunmethod == "ghen20binserver")
+{
+LoadpaylodsGhen20(PLfile);
+}
+}
+
+function load_rdr2_113(){
+msgs.innerHTML="<h1 style='font-size:25px;text-align:center;'>Loading Read Dead Redemption II Mod v1.13. Please wait 20-30 seconds!!!</h1>";
+LoadedMSG="Read Dead Redemption II Mod v1.13 Loaded";
+PLfile = "pl_rdr2113.bin";
+if (sessionStorage.plrunmethod == "sandboxesc")
+{
+exec_type = "payload";
+loadPayloadData();
+}
+else if (sessionStorage.plrunmethod == "ghen20binserver")
+{
+LoadpaylodsGhen20(PLfile);
+}
+}
+
+function load_rdr2_119(){
+msgs.innerHTML="<h1 style='font-size:25px;text-align:center;'>Loading Read Dead Redemption II Mod v1.19. Please wait 20-30 seconds!!!</h1>";
+LoadedMSG="Read Dead Redemption II Mod v1.19 Loaded";
+PLfile = "pl_rdr2119.bin";
+if (sessionStorage.plrunmethod == "sandboxesc")
+{
+exec_type = "payload";
+loadPayloadData();
+}
+else if (sessionStorage.plrunmethod == "ghen20binserver")
+{
+LoadpaylodsGhen20(PLfile);
+}
+}
+
+function load_rdr2_124(){
+msgs.innerHTML="<h1 style='font-size:25px;text-align:center;'>Loading Read Dead Redemption II Mod v1.24. Please wait 20-30 seconds!!!</h1>";
+LoadedMSG="Read Dead Redemption II Mod v1.24 Loaded";
+PLfile = "pl_rdr2124.bin";
+if (sessionStorage.plrunmethod == "sandboxesc")
+{
+exec_type = "payload";
+loadPayloadData();
+}
+else if (sessionStorage.plrunmethod == "ghen20binserver")
+{
+LoadpaylodsGhen20(PLfile);
+}
+}
+
+function load_rdr2_129(){
+msgs.innerHTML="<h1 style='font-size:25px;text-align:center;'>Loading Read Dead Redemption II Mod v1.29. Please wait 20-30 seconds!!!</h1>";
+LoadedMSG="Read Dead Redemption II Mod v1.29 Loaded";
+PLfile = "pl_rdr2129.bin";
+if (sessionStorage.plrunmethod == "sandboxesc")
+{
+exec_type = "payload";
+loadPayloadData();
+}
+else if (sessionStorage.plrunmethod == "ghen20binserver")
+{
+LoadpaylodsGhen20(PLfile);
+}
+}
+
+function load_historyblocker(){
+msgs.innerHTML="<h1 style='font-size:25px;text-align:center;'>Loading History-Blocker. Please wait 20-30 seconds!!!</h1>";
+LoadedMSG="History-Blocker Loaded";
+PLfile = "pl_historyblocker.bin";
+if (sessionStorage.plrunmethod == "sandboxesc")
+{
+exec_type = "payload";
+loadPayloadData();
+}
+else if (sessionStorage.plrunmethod == "ghen20binserver")
+{
+LoadpaylodsGhen20(PLfile);
+}
+}
+
+function load_kerneldumper(){
+msgs.innerHTML="<h1 style='font-size:25px;text-align:center;'>Loading Kernel-Dumper. Please wait 20-30 seconds!!!</h1>";
+LoadedMSG="Kernel-Dumper Loaded";
+PLfile = "pl_kerneldumper.bin";
+if (sessionStorage.plrunmethod == "sandboxesc")
+{
+exec_type = "payload";
+loadPayloadData();
+}
+else if (sessionStorage.plrunmethod == "ghen20binserver")
+{
+LoadpaylodsGhen20(PLfile);
+}
+}
+
+function load_moduledumper(){
+msgs.innerHTML="<h1 style='font-size:25px;text-align:center;'>Loading Kernel Module-Dumper. Please wait 20-30 seconds!!!</h1>";
+LoadedMSG="Kernel Module-Dumper Loaded";
+PLfile = "pl_moduledumper.bin";
+if (sessionStorage.plrunmethod == "sandboxesc")
+{
+exec_type = "payload";
+loadPayloadData();
+}
+else if (sessionStorage.plrunmethod == "ghen20binserver")
+{
+LoadpaylodsGhen20(PLfile);
+}
+}
+
+function load_uart(){
+msgs.innerHTML="<h1 style='font-size:25px;text-align:center;'>Loading Permanent UART. Please wait 20-30 seconds!!!</h1>";
+LoadedMSG="Permanent UART Loaded";
+PLfile = "pl_permanentuart.bin";
+if (sessionStorage.plrunmethod == "sandboxesc")
+{
+exec_type = "payload";
+loadPayloadData();
+}
+else if (sessionStorage.plrunmethod == "ghen20binserver")
+{
+LoadpaylodsGhen20(PLfile);
+}
+}
+
+function load_Linux1gb(){
+msgs.innerHTML="<h1 style='font-size:25px;text-align:center;'>Loading Linux 1gb. Please wait 20-30 seconds!!!</h1>";
+LoadedMSG="Linux 1gb Loaded";
+if (sessionStorage.plrunmethod == "sandboxesc")
+{
+PLfile = "pl_LinuxLoader.js";
+loadPayloadDataSleirs(PLfile);
+}
+else if (sessionStorage.plrunmethod == "ghen20binserver")
+{
+PLfile = "pl_LinuxLoader.bin";
+LoadpaylodsGhen20(PLfile);
+}
+}
+
+function load_Linux2gb(){
+msgs.innerHTML="<h1 style='font-size:25px;text-align:center;'>Loading Linux 2gb. Please wait 20-30 seconds!!!</h1>";
+LoadedMSG="Linux 2gb Loaded";
+if (sessionStorage.plrunmethod == "sandboxesc")
+{
+PLfile = "pl_LinuxLoader2gb.js";
+loadPayloadDataSleirs(PLfile);
+}
+else if (sessionStorage.plrunmethod == "ghen20binserver")
+{
+PLfile = "pl_LinuxLoader2gb.bin";
+LoadpaylodsGhen20(PLfile);
+}
+}
+
+function load_Linux3gb(){
+msgs.innerHTML="<h1 style='font-size:25px;text-align:center;'>Loading Linux 3gb. Please wait 20-30 seconds!!!</h1>";
+LoadedMSG="Linux 3gb Loaded";
+if (sessionStorage.plrunmethod == "sandboxesc")
+{
+PLfile = "pl_LinuxLoader3gb.js";
+loadPayloadDataSleirs(PLfile);
+}
+else if (sessionStorage.plrunmethod == "ghen20binserver")
+{
+PLfile = "pl_LinuxLoader3gb.bin";
+LoadpaylodsGhen20(PLfile);
+}
+}
+
+function load_Linux4gb(){
+msgs.innerHTML="<h1 style='font-size:25px;text-align:center;'>Loading Linux 4gb. Please wait 20-30 seconds!!!</h1>";
+LoadedMSG="Linux 4gb Loaded";
+if (sessionStorage.plrunmethod == "sandboxesc")
+{
+PLfile = "pl_LinuxLoader4gb.js";
+loadPayloadDataSleirs(PLfile);
+}
+else if (sessionStorage.plrunmethod == "ghen20binserver")
+{
+PLfile = "pl_LinuxLoader4gb.bin";
+LoadpaylodsGhen20(PLfile);
+}
+}
+
+function load_Linux5gb(){
+msgs.innerHTML="<h1 style='font-size:25px;text-align:center;'>Loading Linux 5gb. Please wait 20-30 seconds!!!</h1>";
+LoadedMSG="Linux 5gb Loaded";
+if (sessionStorage.plrunmethod == "sandboxesc")
+{
+PLfile = "pl_LinuxLoader5gb.js";
+loadPayloadDataSleirs(PLfile);
+}
+else if (sessionStorage.plrunmethod == "ghen20binserver")
+{
+PLfile = "pl_LinuxLoader5gb.bin";
+LoadpaylodsGhen20(PLfile);
+}
+}
+
+function load_ps4debug(){
+msgs.innerHTML="<h1 style='font-size:25px;text-align:center;'>Loading CTN Ps4Debug v1.1.14. Please wait 20-30 seconds!!!</h1>";
+LoadedMSG="CTN Ps4Debug v1.1.14 Loaded";
+PLfile = "pl_ps4debug.bin";
+if (sessionStorage.plrunmethod == "sandboxesc")
+{
+exec_type = "payload";
+loadPayloadData();
+}
+else if (sessionStorage.plrunmethod == "ghen20binserver")
+{
+LoadpaylodsGhen20(PLfile);
+}
+}
+
+function load_restore(){
+msgs.innerHTML="<h1 style='font-size:25px;text-align:center;'>Loading DB-Restore. Please wait 20-30 seconds!!!</h1>";
+LoadedMSG="DB-Restore Loaded";
+PLfile = "pl_restore.bin";
+if (sessionStorage.plrunmethod == "sandboxesc")
+{
+exec_type = "payload";
+loadPayloadData();
+}
+else if (sessionStorage.plrunmethod == "ghen20binserver")
+{
+LoadpaylodsGhen20(PLfile);
+}
+}
+
+function load_todex(){
+msgs.innerHTML="<h1 style='font-size:25px;text-align:center;'>Loading Enable-Dex. Please wait 20-30 seconds!!!</h1>";
+LoadedMSG="ToDex Loaded";
+PLfile = "pl_todex.bin";
+if (sessionStorage.plrunmethod == "sandboxesc")
+{
+exec_type = "payload";
+loadPayloadData();
+}
+else if (sessionStorage.plrunmethod == "ghen20binserver")
+{
+LoadpaylodsGhen20(PLfile);
+}
+}
+
+function load_webrte(){
+msgs.innerHTML="<h1 style='font-size:25px;text-align:center;'>Loading WebRTE. Please wait 20-30 seconds!!!</h1>";
+LoadedMSG="WebRTE Loaded";
+PLfile = "pl_webrte.bin";
+if (sessionStorage.plrunmethod == "sandboxesc")
+{
+exec_type = "payload";
+loadPayloadData();
+}
+else if (sessionStorage.plrunmethod == "ghen20binserver")
+{
+LoadpaylodsGhen20(PLfile);
+}
+}
+
+function load_disableaslr(){
+msgs.innerHTML="<h1 style='font-size:25px;text-align:center;'>Loading Disable-ASLR. Please wait 20-30 seconds!!!</h1>";
+LoadedMSG="Disable-ASLR Loaded";
+PLfile = "pl_disableaslr.bin";
+if (sessionStorage.plrunmethod == "sandboxesc")
+{
+exec_type = "payload";
+loadPayloadData();
+}
+else if (sessionStorage.plrunmethod == "ghen20binserver")
+{
+LoadpaylodsGhen20(PLfile);
+}
+}
+</script>
+    
+</body>
+</html>
