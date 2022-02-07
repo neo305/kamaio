@@ -5,12 +5,14 @@ CACHE MANIFEST
 900.html
 bg.jpg
 btn.css
+cache.html
 exploit.js
 favicon.ico
 frontend.js
 index.html
 index.js
 int64.js
+kexploit-auto.js
 kexploit-launcher.js
 kexploit.js
 malloc.js
@@ -19,6 +21,10 @@ netcat.js
 payload.js
 pl_app2usb.bin
 pl_appdumper.bin
+pl_ArabicGuy100.bin
+pl_ArabicGuy127.bin
+pl_ArabicGuy132.bin
+pl_ArabicGuy133.bin
 pl_backup.bin
 pl_BeefQueefMod133.bin
 pl_BeefQueefMod134.bin
@@ -55,7 +61,9 @@ pl_restore.bin
 pl_rifrenamer.bin
 pl_todex.bin
 pl_webrte.bin
-pl_WildeModz14_138.bin
+pl_WildeModz_132.bin
+pl_WildeModz_133.bin
+pl_WildeModz_138.bin
 relocator.js
 rop.js
 rop_sleirs.js
@@ -65,4 +73,9 @@ webkit.js
 
 NETWORK:
 *
+
+SETTINGS:
+prefer-online:
+
+# Date: 06/02/2022  10:00:00.00
 
