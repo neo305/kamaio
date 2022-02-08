@@ -5,7 +5,7 @@
 <link rel="stylesheet" href="btn.css">
 <script type="text/javascript" src="index.js"></script>
 <style>
-body{background-image: url("bg.jpg");
+body{background-image: url("bg.jpg"); background-size: 100%;
 color:white;font-size:20px;text-align:center;margin:0;overflow:hidden;}
 .info{overflow: hidden;position: fixed;position: absolute;top: 45%;left: 50%;font-size: 25px;font-family: sans-serif;color: #b8b8b8;transform: translate(-50%, -50%);}
 .button{background-color: white;color: black;height: 5%;width: 13,7%;cursor: pointer;font-size: medium;}
@@ -35,9 +35,10 @@ function pldone() {
     <div style="width:100%;font-size:20px;color:white">
     PS4 Firmware <span id="PS4fw"></span></div>
     <br>
-    <div id="pldmenu" style=font-size:16px>
+<div style="position: relative">
+     <p style="position: fixed; bottom: 0; width:100%; text-align: center">
     <button class="btnkme" onMouseOver="msgs.innerHTML='Orbis Tool Box v1190 - By OSM'"; onmouseout="msgs.innerHTML='PS4 900FW Payloads (Manual Method) Offline'" onclick="load_orbistoolbox(); return false">Orbis-Tool-Box</button>
-    <button class="btnkme" onMouseOver="msgs.innerHTML='App-2-Usb - Original Version By Stooged / 9.00 Port By Al Azif'"; onmouseout="msgs.innerHTML='PS4 900FW Payloads (Manual Method) Offline'" onclick="load_app2usb(); return false">App-2-Usb</button>
+	<button class="btnkme" onMouseOver="msgs.innerHTML='WebRTE v1.0 - By PS4 Trainer'"; onmouseout="msgs.innerHTML='PS4 900FW Payloads (Manual Method) Offline'" onclick="load_webrte(); return false">WebRTE</button>
     <button class="btnkme" onMouseOver="msgs.innerHTML='App Dumper Only v1.8 - Original Version By xVortex / 9.00 Port Al Azif'"; onmouseout="msgs.innerHTML='PS4 900FW Payloads (Manual Method) Offline'" onclick="load_dumper(); return false">App-Dumper</button>
     <button class="btnkme" onMouseOver="msgs.innerHTML='Disable-Updates v1.0 - By Al Azif'"; onmouseout="msgs.innerHTML='PS4 900FW Payloads (Manual Method) Offline'" onclick="load_disableupdates(); return false">Disable-Updates</button>
     <button class="btnkme" onMouseOver="msgs.innerHTML='Enable-Updates v1.0 - By Al Azif'"; onmouseout="msgs.innerHTML='PS4 900FW Payloads (Manual Method) Offline'" onclick="load_enableupdates(); return false">Enable-Updates</button>
@@ -54,44 +55,14 @@ function pldone() {
     <br><br>
     <button class="btnkme" onMouseOver="msgs.innerHTML='DB-Restore v1.0 - By Leeful / 9.00 Port Al Azif'"; onmouseout="msgs.innerHTML='PS4 900FW Payloads (Manual Method) Offline'" onclick="load_restore(); return false">DB-Restore</button>
     <button class="btnkme" onMouseOver="msgs.innerHTML='To-Dex v1.0 - By notzecoxao'"; onmouseout="msgs.innerHTML='PS4 900FW Payloads (Manual Method) Offline'" onclick="load_todex(); return false">To-Dex</button>
-    <button class="btnkme" onMouseOver="msgs.innerHTML='WebRTE v1.0 - By PS4 Trainer'"; onmouseout="msgs.innerHTML='PS4 900FW Payloads (Manual Method) Offline'" onclick="load_webrte(); return false">WebRTE</button>
+    <button class="btnkme" onMouseOver="msgs.innerHTML='App-2-Usb - Original Version By Stooged / 9.00 Port By Al Azif'"; onmouseout="msgs.innerHTML='PS4 900FW Payloads (Manual Method) Offline'" onclick="load_app2usb(); return false">App-2-Usb</button>
     <button class="btnkme" onMouseOver="msgs.innerHTML='Permanent UART - 9.00 Port By Al Azif'"; onmouseout="msgs.innerHTML='PS4 900FW Payloads (Manual Method) Offline'" onclick="load_uart(); return false">Permanent-UART</button>
     <button class="btnkme" onMouseOver="msgs.innerHTML='Disable ASLR - 9.00 Port By Al Azif'"; onmouseout="msgs.innerHTML='PS4 900FW Payloads (Manual Method) Offline'" onclick="load_disableaslr(); return false">Disable-ASLR</button>
     <button class="btnkme" onMouseOver="msgs.innerHTML='Kernel-Module Dumper -  9.00 Port By Al Azif'"; onmouseout="msgs.innerHTML='PS4 900FW Payloads (Manual Method) Offline'" onclick="load_moduledumper(); return false">Kernel-Module-Dumper</button>
-    </div>
+</p>
+	</div>
     <br><br>
-    <a id="linuxl" ><button class="btnkme" onMouseOver="msgs.innerHTML='Linux Vram Loaders Payloads'" ; onmouseout="msgs.innerHTML='PS4 900FW Payloads (Manual Method) Offline'" type="button">Linux Vram Payloads</button></a>
-    <div id="linuxlJ" style="display: none;">
-      <button class="btnkme" onMouseOver="msgs.innerHTML='Linux Vram Loader 1GB - 9.00 Port By NazkyYT'"; onmouseout="msgs.innerHTML='PS4 900FW Payloads (Manual Method) Offline'" onclick="load_Linux1gb(); return false">Linux 1GB Vram</button>
-      <button class="btnkme" onMouseOver="msgs.innerHTML='Linux Vram Loader 2GB - 9.00 Port By NazkyYT'"; onmouseout="msgs.innerHTML='PS4 900FW Payloads (Manual Method) Offline'" onclick="load_Linux2gb(); return false">Linux 2GB Vram</button>
-      <button class="btnkme" onMouseOver="msgs.innerHTML='Linux Vram Loader 3GB - 9.00 Port By NazkyYT'"; onmouseout="msgs.innerHTML='PS4 900FW Payloads (Manual Method) Offline'" onclick="load_Linux3gb(); return false">Linux 3GB Vram</button>
-      <button class="btnkme" onMouseOver="msgs.innerHTML='Linux Vram Loader 4GB - 9.00 Port By NazkyYT'"; onmouseout="msgs.innerHTML='PS4 900FW Payloads (Manual Method) Offline'" onclick="load_Linux4gb(); return false">Linux 4GB Vram</button>
-      <button class="btnkme" onMouseOver="msgs.innerHTML='Linux Vram Loader 5GB - 9.00 Port By NazkyYT'"; onmouseout="msgs.innerHTML='PS4 900FW Payloads (Manual Method) Offline'" onclick="load_Linux5gb(); return false">Linux 5GB Vram</button>
-    </div>
-    <a id="gtavl" ><button class="btnkme" onMouseOver="msgs.innerHTML='Grand Theft Auto V Mod Menu Payloads'" ; onmouseout="msgs.innerHTML='PS4 900FW Payloads (Manual Method) Offline'" type="button">GTA V Mod Payloads</button></a>
-    <div id="gtavlJ" style="display: none;">
-      <button class="btnkme" onMouseOver="msgs.innerHTML='ArabicGuy For GTA V Update v1.00 - By RF0oDxM0Dz'"; onmouseout="msgs.innerHTML='PS4 900FW Payloads (Manual Method) Offline'" onclick="load_gtavarabicguy100(); return false">ArabicGuy GTAV v1.00</button>
-      <button class="btnkme" onMouseOver="msgs.innerHTML='ArabicGuy For GTA V Update v1.27 - By RF0oDxM0Dz'"; onmouseout="msgs.innerHTML='PS4 900FW Payloads (Manual Method) Offline'" onclick="load_gtavarabicguy127(); return false">ArabicGuy GTAV v1.27</button>
-      <button class="btnkme" onMouseOver="msgs.innerHTML='ArabicGuy For GTA V Update v1.32 - By RF0oDxM0Dz'"; onmouseout="msgs.innerHTML='PS4 900FW Payloads (Manual Method) Offline'" onclick="load_gtavarabicguy132(); return false">ArabicGuy GTAV v1.32</button>
-      <button class="btnkme" onMouseOver="msgs.innerHTML='ArabicGuy For GTA V Update v1.33 - By RF0oDxM0Dz'"; onmouseout="msgs.innerHTML='PS4 900FW Payloads (Manual Method) Offline'" onclick="load_gtavarabicguy133(); return false">ArabicGuy GTAV v1.33</button>
-      <br><br>
-      <button class="btnkme" onMouseOver="msgs.innerHTML='BeefQueefMod For GTA V Update v1.33 - By GraFfiX'"; onmouseout="msgs.innerHTML='PS4 900FW Payloads (Manual Method) Offline'" onclick="load_gtavbeefqueef133(); return false">BeefQueefMod GTAV v1.33</button>
-      <button class="btnkme" onMouseOver="msgs.innerHTML='BeefQueefMod For GTA V Update v1.34 - By GraFfiX'"; onmouseout="msgs.innerHTML='PS4 900FW Payloads (Manual Method) Offline'" onclick="load_gtavbeefqueef134(); return false">BeefQueefMod GTAV v1.34</button>
-      <button class="btnkme" onMouseOver="msgs.innerHTML='BeefQueefMod For GTA V Update v1.38 - By GraFfiX'"; onmouseout="msgs.innerHTML='PS4 900FW Payloads (Manual Method) Offline'" onclick="load_gtavbeefqueef138(); return false">BeefQueefMod GTAV v1.38</button>
-      <br><br>
-      <button class="btnkme" onMouseOver="msgs.innerHTML='WildeModz v1.2 For GTA V Update v1.32 - By Wilde Modz'"; onmouseout="msgs.innerHTML='PS4 900FW Payloads (Manual Method) Offline'" onclick="load_gtavwildemodz132(); return false">WildeModz GTAV v1.32</button>
-      <button class="btnkme" onMouseOver="msgs.innerHTML='WildeModz v1.2 For GTA V Update v1.33 - By Wilde Modz'"; onmouseout="msgs.innerHTML='PS4 900FW Payloads (Manual Method) Offline'" onclick="load_gtavwildemodz133(); return false">WildeModz GTAV v1.33</button>
-      <button class="btnkme" onMouseOver="msgs.innerHTML='WildeModz v1.4 For GTA V Update v1.38 - By Wilde Modz'"; onmouseout="msgs.innerHTML='PS4 900FW Payloads (Manual Method) Offline'" onclick="load_gtavwildemodz138(); return false">WildeModz GTAV v1.38</button>
-      <br><br>
-      <button class="btnkme" onMouseOver="msgs.innerHTML='Expulsion Mod Menu v3.0 For GTA V Update v1.38 - By LushModz'"; onmouseout="msgs.innerHTML='PS4 900FW Payloads (Manual Method) Offline'" onclick="load_gtavexpulsion138(); return false">Expulsion Mod v3.0 GTAV v1.38</button>
-    </div>
-    <a id="rdr2l" ><button class="btnkme" onMouseOver="msgs.innerHTML='Red Dead Redemption II Mod Menu Payloads'" ; onmouseout="msgs.innerHTML='PS4 900FW Payloads (Manual Method) Offline'" type="button">RDR II Mod Payloads</button></a>
-    <div id="rdr2lJ" style="display: none;">
-      <button class="btnkme" onMouseOver="msgs.innerHTML='Red Dead Redemption II Mod v1.00 - Original Version By RF0oDxM0Dz'"; onmouseout="msgs.innerHTML='PS4 900FW Payloads (Manual Method) Offline'" onclick="load_rdr2_100(); return false">RDR II Mod v1.00</button>
-      <button class="btnkme" onMouseOver="msgs.innerHTML='Red Dead Redemption II Mod v1.13  - Original Version By RF0oDxM0Dz'"; onmouseout="msgs.innerHTML='PS4 900FW Payloads (Manual Method) Offline'" onclick="load_rdr2_113(); return false">RDR II Mod v1.13</button>
-      <button class="btnkme" onMouseOver="msgs.innerHTML='Red Dead Redemption II Mod v1.19  - Original Version By RF0oDxM0Dz'"; onmouseout="msgs.innerHTML='PS4 900FW Payloads (Manual Method) Offline'" onclick="load_rdr2_119(); return false">RDR II Mod v1.19</button>
-      <button class="btnkme" onMouseOver="msgs.innerHTML='Red Dead Redemption II Mod v1.24  - Original Version By RF0oDxM0Dz'"; onmouseout="msgs.innerHTML='PS4 900FW Payloads (Manual Method) Offline'" onclick="load_rdr2_124(); return false">RDR II Mod v1.24</button>
-      <button class="btnkme" onMouseOver="msgs.innerHTML='Red Dead Redemption II Mod v1.29  - Original Version By RF0oDxM0Dz'"; onmouseout="msgs.innerHTML='PS4 900FW Payloads (Manual Method) Offline'" onclick="load_rdr2_129(); return false">RDR II Mod v1.29</button>
+ 
     </div>
     <div id="Backl" style="display: none;">
       <br>
@@ -99,8 +70,8 @@ function pldone() {
       <a ><button class="btnkme" onMouseOver="msgs.innerHTML='Go Back'" ; onmouseout="msgs.innerHTML='PS4 900FW Payloads (Manual Method) Offline'" type="button">Back</button></a>
     </div>
     <br>
-    <p style="text-align:center;font-size:25px;color:white">Massive Thanks - Znullptr, ChendoChap, Specter, Sleirsgoevy, theflow0, SiSTRo, Al-Azif, PRB-Borg, Leeful, Nazky And Many More...</p>
-    <p style="text-align:center;font-size:20px;color:white">https://twitter.com/KameleonRe</p>
+ 
+ 
     </div>
     <script>
     var UA = navigator.userAgent.substring(navigator.userAgent.indexOf('5.0 (') + 19, navigator.userAgent.indexOf(') Apple')).replace("layStation 4/","");
