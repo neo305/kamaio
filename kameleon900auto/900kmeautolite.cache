@@ -10,6 +10,7 @@ exploit.js
 favicon.ico
 frontend.js
 goldhen_2.2.2_900.bin
+goldhen_2.3b2_900.bin
 index.html
 index.js
 int64.js
@@ -29,7 +30,6 @@ pl_enableupdates.bin
 pl_exitidu.bin
 pl_ftp.bin
 pl_goldhen20b.bin
-pl_goldhen21.bin
 pl_historyblocker.bin
 pl_kerneldumper.bin
 pl_LinuxLoader.bin
