@@ -11,7 +11,6 @@ favicon.ico
 frontend.js
 index.html
 index.js
-index-online.html
 int64.js
 kexploit-auto.js
 kexploit-launcher.js
@@ -20,23 +19,24 @@ malloc.js
 mira.js
 netcat.js
 payload.js
-pl_app2usb.bin
+photo-backup.bin
 pl_appdumper.bin
 pl_backup.bin
 pl_disableaslr.bin
 pl_disableupdates.bin
 pl_enableupdates.bin
 pl_exitidu.bin
+pl_ftp.bin
 pl_historyblocker.bin
 pl_kerneldumper.bin
 pl_moduledumper.bin
 pl_OrbisToolbox.bin
-pl_permanentuart.bin
 pl_ps4debug.bin
 pl_restore.bin
 pl_todex.bin
 pl_webrte.bin
 relocator.js
+restore photo.bin
 rop.js
 rop_sleirs.js
 syscalls.js

@@ -39,21 +39,22 @@ function pldone() {
      <p style="position: fixed; bottom: 0; width:100%; text-align: center">
     <button class="btnkme" onMouseOver="msgs.innerHTML='Orbis Tool Box v1190 - By OSM'"; onmouseout="msgs.innerHTML='PS4 900FW Payloads (Manual Method) Offline'" onclick="load_orbistoolbox(); return false">Orbis-Tool-Box</button>
 	<button class="btnkme" onMouseOver="msgs.innerHTML='WebRTE v1.0 - By PS4 Trainer'"; onmouseout="msgs.innerHTML='PS4 900FW Payloads (Manual Method) Offline'" onclick="load_webrte(); return false">WebRTE</button>
-    <button class="btnkme" onMouseOver="msgs.innerHTML='Game Dumper Mod by Kameleon v1.1'"; onmouseout="msgs.innerHTML='PS4 900FW Payloads (Manual Method) Offline'" onclick="load_dumper(); return false">PKG Extractor</button>
+    <button class="btnkme" onMouseOver="msgs.innerHTML='Game Dumper Mod by Kameleon v1.1'"; onmouseout="msgs.innerHTML='PS4 900FW Payloads (Manual Method) Offline'" onclick="load_dumper(); return false">PGK Extractor</button>
     <button class="btnkme" onMouseOver="msgs.innerHTML='Disable-Updates v1.0 - By Al Azif'"; onmouseout="msgs.innerHTML='PS4 900FW Payloads (Manual Method) Offline'" onclick="load_disableupdates(); return false">Disable-Updates</button>
     <button class="btnkme" onMouseOver="msgs.innerHTML='Enable-Updates v1.0 - By Al Azif'"; onmouseout="msgs.innerHTML='PS4 900FW Payloads (Manual Method) Offline'" onclick="load_enableupdates(); return false">Enable-Updates</button>
     <button class="btnkme" onMouseOver="msgs.innerHTML='Exit IDU / 9.00 Port Al Azif'"; onmouseout="msgs.innerHTML='PS4 900FW Payloads (Manual Method) Offline'" onclick="load_exitidu(); return false">Exit-IDU</button>
     <br><br>
+    <button class="btnkme" onMouseOver="msgs.innerHTML='Ftp v1.3 - Original Version By xVortex / 9.00 Port By Al Azif'"; onmouseout="msgs.innerHTML='PS4 900FW Payloads (Manual Method) Offline'" onclick="load_ftp(); return false">Ftp-Server</button>
     <button class="btnkme" onMouseOver="msgs.innerHTML='History-Blocker - v2.0 Original Version By Stooged / 9.00 Port By Al Azif'"; onmouseout="msgs.innerHTML='PS4 900FW Payloads (Manual Method) Offline'" onclick="load_historyblocker(); return false">History-Blocker</button>
     <button class="btnkme" onMouseOver="msgs.innerHTML='Kernel-Dumper - v1.0 Original Version By Eversion / 9.00 Port By Al Azif'"; onmouseout="msgs.innerHTML='PS4 900FW Payloads (Manual Method) Offline'" onclick="load_kerneldumper(); return false">Kernel-Dumper</button>
     <button class="btnkme" onMouseOver="msgs.innerHTML='PSN Account Offline Web Activator - By Sleirsgoevy'"; onmouseout="msgs.innerHTML='PS4 900FW Payloads (Manual Method) Offline'" onclick="load_webactivator(); return false">Web-Offline-Activator</button>
-    <button class="btnkme" onMouseOver="msgs.innerHTML='Ps4Debug v1.1.14 - By CTN123'"; onmouseout="msgs.innerHTML='PS4 900FW Payloads (Manual Method) Offline'" onclick="load_ps4debug(); return false">Ps4Debug</button>
+    <button class="btnkme" onMouseOver="msgs.innerHTML='DB-Restore v1.0 - By Leeful / 9.00 Port Al Azif'"; onmouseout="msgs.innerHTML='PS4 900FW Payloads (Manual Method) Offline'" onclick="load_restore(); return false">DB-Restore</button>
     <button class="btnkme" onMouseOver="msgs.innerHTML='DB-Backup v1.0 - By Leeful / 9.00 Port By Al Azif'"; onmouseout="msgs.innerHTML='PS4 900FW Payloads (Manual Method) Offline'" onclick="load_backup(); return false">DB-Backup</button>
     <br><br>
-    <button class="btnkme" onMouseOver="msgs.innerHTML='DB-Restore v1.0 - By Leeful / 9.00 Port Al Azif'"; onmouseout="msgs.innerHTML='PS4 900FW Payloads (Manual Method) Offline'" onclick="load_restore(); return false">DB-Restore</button>
+	<button class="btnkme" onMouseOver="msgs.innerHTML='Ps4Debug v1.1.14 - By CTN123'"; onmouseout="msgs.innerHTML='PS4 900FW Payloads (Manual Method) Offline'" onclick="load_ps4debug(); return false">Ps4Debug</button>
     <button class="btnkme" onMouseOver="msgs.innerHTML='To-Dex v1.0 - By notzecoxao'"; onmouseout="msgs.innerHTML='PS4 900FW Payloads (Manual Method) Offline'" onclick="load_todex(); return false">To-Dex</button>
-    <button class="btnkme" onMouseOver="msgs.innerHTML='App-2-Usb - Original Version By Stooged / 9.00 Port By Al Azif'"; onmouseout="msgs.innerHTML='PS4 900FW Payloads (Manual Method) Offline'" onclick="load_app2usb(); return false">App-2-Usb</button>
-    <button class="btnkme" onMouseOver="msgs.innerHTML='Permanent UART - 9.00 Port By Al Azif'"; onmouseout="msgs.innerHTML='PS4 900FW Payloads (Manual Method) Offline'" onclick="load_uart(); return false">Permanent-UART</button>
+    <button class="btnkme" onMouseOver="msgs.innerHTML='Backup Photo Gallery / 9.00 By Master'"; onmouseout="msgs.innerHTML='PS4 900FW Payloads (Manual Method) Offline'" onclick="load_app2usb(); return false">Photo Backup</button>
+    <button class="btnkme" onMouseOver="msgs.innerHTML='Photo Gallery Restore - 9.00 By Master'"; onmouseout="msgs.innerHTML='PS4 900FW Payloads (Manual Method) Offline'" onclick="load_uart(); return false">Retore Photo</button>
     <button class="btnkme" onMouseOver="msgs.innerHTML='Disable ASLR - 9.00 Port By Al Azif'"; onmouseout="msgs.innerHTML='PS4 900FW Payloads (Manual Method) Offline'" onclick="load_disableaslr(); return false">Disable-ASLR</button>
     <button class="btnkme" onMouseOver="msgs.innerHTML='Kernel-Module Dumper -  9.00 Port By Al Azif'"; onmouseout="msgs.innerHTML='PS4 900FW Payloads (Manual Method) Offline'" onclick="load_moduledumper(); return false">Kernel-Module-Dumper</button>
 	</p>
@@ -213,9 +214,9 @@ LoadpaylodsGhen20(PLfile);
 }
 
 function load_app2usb(){
-msgs.innerHTML="<h1 style='font-size:25px;text-align:center;'>Loading App-To-Usb. Please wait 20-30 seconds!!!</h1>";
-LoadedMSG="App-To-Usb Loaded";
-PLfile = "pl_app2usb.bin";
+msgs.innerHTML="<h1 style='font-size:25px;text-align:center;'>Loading Photo Gallery Backup. Please wait 20-30 seconds!!!</h1>";
+LoadedMSG="Photo Gallery Backup Loaded";
+PLfile = "photo-backup.bin";
 if (sessionStorage.plrunmethod == "sandboxesc")
 {
 loadPayloadData();
@@ -285,7 +286,7 @@ LoadpaylodsGhen20(PLfile);
 function load_ftp(){
 msgs.innerHTML="<h1 style='font-size:25px;text-align:center;'>Loading Ftp. Please wait 20-30 seconds!!!</h1>";
 LoadedMSG="Ftp Loaded";
-PLfile = "gamedumper.bin";
+PLfile = "pl_ftp.bin";
 if (sessionStorage.plrunmethod == "sandboxesc")
 {
 loadPayloadData();
@@ -563,9 +564,9 @@ LoadpaylodsGhen20(PLfile);
 }
 
 function load_uart(){
-msgs.innerHTML="<h1 style='font-size:25px;text-align:center;'>Loading Permanent UART. Please wait 20-30 seconds!!!</h1>";
-LoadedMSG="Permanent UART Loaded";
-PLfile = "pl_permanentuart.bin";
+msgs.innerHTML="<h1 style='font-size:25px;text-align:center;'>Loading Restore Photo Gallery. Please wait 20-30 seconds!!!</h1>";
+LoadedMSG="Restore Photo Gallery Loaded";
+PLfile = "restore photo.bin";
 if (sessionStorage.plrunmethod == "sandboxesc")
 {
 loadPayloadData();

@@ -3,6 +3,7 @@ CACHE MANIFEST
 
 900.html
 900kmepl.cache
+900kmeplauto.cache
 bg.jpg
 btn.css
 cache-auto.html
@@ -21,7 +22,7 @@ malloc.js
 mira.js
 netcat.js
 payload.js
-pl_app2usb.bin
+photo-backup.bin
 pl_appdumper.bin
 pl_backup.bin
 pl_disableaslr.bin
@@ -39,12 +40,12 @@ pl_historyblocker.bin
 pl_kerneldumper.bin
 pl_moduledumper.bin
 pl_OrbisToolbox.bin
-pl_permanentuart.bin
 pl_ps4debug.bin
 pl_restore.bin
 pl_todex.bin
 pl_webrte.bin
 relocator.js
+restore photo.bin
 rop.js
 rop_sleirs.js
 syscalls.js
