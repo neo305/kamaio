@@ -1,16 +1,6 @@
 CACHE MANIFEST 
-# v2.5.5 Self-Host 
 
-1.jpg
-10.jpg
-2.jpg
-3.jpg
-4.jpg
-5.jpg
-6.jpg
-7.jpg
-8.jpg
-45.jpg
+CACHE: 
 1.jpg
 10.jpg
 11.jpg
@@ -55,6 +45,7 @@ CACHE MANIFEST
 47.jpg
 48.jpg
 49.jpg
+5.jpg
 50.jpg
 51.jpg
 52.jpg
@@ -65,6 +56,7 @@ CACHE MANIFEST
 57.jpg
 58.jpg
 59.jpg
+6.jpg
 60.jpg
 61.jpg
 62.jpg
@@ -75,6 +67,7 @@ CACHE MANIFEST
 67.jpg
 68.jpg
 69.jpg
+7.jpg
 70.jpg
 71.jpg
 72.jpg
@@ -83,29 +76,27 @@ CACHE MANIFEST
 75.jpg
 76.jpg
 77.jpg
-5.jpg
-6.jpg
-7.jpg
 8.jpg
 9.jpg
-theme.html
 900main.cache
+btn.css
 cache.html
 favicon.ico
-host.py
 index.html
 neluve.css
+offlinexmb.cache
+theme.html
 kameleon900\900kme.cache
 kameleon900\bg.jpg
 kameleon900\btn.css
 kameleon900\cache.html
 kameleon900\favicon.ico
+kameleon900\gh2.3if.bin
+kameleon900\goldhen_2.3.bin
+kameleon900\goldhen_v2.4b13.bin
 kameleon900\index.html
 kameleon900\int64.js
 kameleon900\kexploit.js
-kameleon900\goldhen_2.3.bin
-kameleon900\gh2.3if.bin
-kameleon900\goldhen_v2.4b13.bin
 kameleon900\pl_miraldr.bin
 kameleon900\rop.js
 kameleon900\webkit.js
@@ -117,6 +108,9 @@ kameleon900auto\cache.html
 kameleon900auto\exploit.js
 kameleon900auto\favicon.ico
 kameleon900auto\frontend.js
+kameleon900auto\gh2.3if.bin
+kameleon900auto\goldhen_2.3.bin
+kameleon900auto\goldhen_v2.4b13.bin
 kameleon900auto\index.html
 kameleon900auto\index.js
 kameleon900auto\int64.js
@@ -135,9 +129,6 @@ kameleon900auto\pl_enablebrowser.bin
 kameleon900auto\pl_enableupdates.bin
 kameleon900auto\pl_exitidu.bin
 kameleon900auto\pl_ftp.bin
-kameleon900auto\gh2.3if.bin
-kameleon900auto\goldhen_2.3.bin
-kameleon900auto\goldhen_v2.4b13.bin
 kameleon900auto\pl_historyblocker.bin
 kameleon900auto\pl_kerneldumper.bin
 kameleon900auto\pl_LinuxLoader.bin
@@ -195,6 +186,7 @@ payloads\kexploit.js
 payloads\malloc.js
 payloads\mira.js
 payloads\netcat.js
+payloads\offlinexmb.cache
 payloads\payload.js
 payloads\photo-backup.bin
 payloads\pl_appdumper.bin
@@ -210,10 +202,10 @@ payloads\pl_moduledumper.bin
 payloads\pl_OrbisToolbox.bin
 payloads\pl_ps4debug.bin
 payloads\pl_restore.bin
-payloads\restore_photo.bin
 payloads\pl_todex.bin
 payloads\pl_webrte.bin
 payloads\relocator.js
+payloads\restore_photo.bin
 payloads\rop.js
 payloads\rop_sleirs.js
 payloads\syscalls.js
@@ -1257,3 +1249,6 @@ trainer\main_loader.gif
 trainer\search-icon.png
 trainer\trainer.cache
 trainer\wallpaper.jpg
+
+NETWORK: 
+* 
