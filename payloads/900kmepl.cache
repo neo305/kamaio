@@ -36,7 +36,7 @@ pl_restore.bin
 pl_todex.bin
 pl_webrte.bin
 relocator.js
-restore photo.bin
+restore_photo.bin
 rop.js
 rop_sleirs.js
 syscalls.js

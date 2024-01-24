@@ -29,12 +29,6 @@ pl_disableaslr.bin
 pl_disableupdates.bin
 pl_enableupdates.bin
 pl_exitidu.bin
-pl_fan50.bin
-pl_fan55.bin
-pl_fan60.bin
-pl_fan65.bin
-pl_fan70.bin
-pl_fan75.bin
 pl_ftp.bin
 pl_historyblocker.bin
 pl_kerneldumper.bin
@@ -45,7 +39,7 @@ pl_restore.bin
 pl_todex.bin
 pl_webrte.bin
 relocator.js
-restore photo.bin
+restore_photo.bin
 rop.js
 rop_sleirs.js
 syscalls.js
