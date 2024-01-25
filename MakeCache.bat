@@ -32,7 +32,7 @@ set "firstLineReady="
 if defined firstLineReady (echo()
 set "firstLineReady=1"
 <nul set /p "=%%a")
-) > 84ciss.manifest
+) > offlinexmb.cache
 del test.txt
 
 echo laz305.manifest created!!
