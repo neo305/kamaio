@@ -1,12 +1,14 @@
 CACHE MANIFEST 
-# Kameleon 900V AUTO V1.0
-# 02/04/2022-14:27:00.78 
+# v2.5.5 Self-Host 
 
 900.html
+alert.mjs
 bg.jpg
 btn.css
 cache.html
+config.mjs
 exploit.js
+exploit.mjs
 favicon.ico
 frontend.js
 gh2.3if.bin
@@ -15,10 +17,13 @@ goldhen_2.4b16.2.bin
 index.html
 index.js
 int64.js
+jbc_ldr.js
 kexploit-auto.js
+kexploit-launcher.js
 kexploit.js
 malloc.js
 mira.js
+mira_ldr.js
 netcat.js
 payload.js
 pl_app2usb.bin
@@ -57,12 +62,11 @@ rop_sleirs.js
 syscalls.js
 syscalls2.js
 webkit.js
-
-NETWORK:
-*
-
-SETTINGS:
-prefer-online:
-
-# Date: 06/02/2022  10:00:00.00
-
+module\chain.mjs
+module\constants.mjs
+module\int64.mjs
+module\mem.mjs
+module\memtools.mjs
+module\offset.mjs
+module\rw.mjs
+module\utils.mjs

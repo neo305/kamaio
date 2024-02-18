@@ -1,11 +1,11 @@
 {
   "name": "God of War Ragnarok",
-  "id": "CUSA34390",
+  "id": "CUSA34384",
   "version": "02.00",
   "process": "eboot.bin",
   "mods": [
     {
-      "name": "Cheat Activator",
+      "name": "Cheat Activator (cheats with * need this on)",
       "type": "checkbox",
       "memory": [
         {
@@ -76,7 +76,7 @@
       ]
     },
     {
-      "name": "No Cooldown",
+      "name": "No Cooldown (no cooldown for weapons use with combo L1 + *)",
       "type": "checkbox",
       "memory": [
         {
@@ -87,7 +87,7 @@
       ]
     },
     {
-      "name": "Infinite XP/HS/Resources (99,999)",
+      "name": "Infinite XP/HS/Resources x99,999",
       "type": "checkbox",
       "memory": [
         {
@@ -108,7 +108,7 @@
       ]
     },
     {
-      "name": "100",
+      "name": "Infinite XP/HS/Resources x100 (activated x99,999 first)",
       "type": "button",
       "memory": [
         {
@@ -119,7 +119,7 @@
       ]
     },
     {
-      "name": "1,000",
+      "name": "Infinite XP/HS/Resources x1,000 (activated x99,999 first)",
       "type": "button",
       "memory": [
         {
@@ -130,7 +130,7 @@
       ]
     },
     {
-      "name": "2,000",
+      "name": "Infinite XP/HS/Resources x2,000 (activated x99,999 first)",
       "type": "button",
       "memory": [
         {
@@ -141,7 +141,7 @@
       ]
     },
     {
-      "name": "99,999",
+      "name": "Infinite XP/HS/Resources x99,999 (only if you activated other Infinite XP/HS/Resources cheats)",
       "type": "button",
       "memory": [
         {
@@ -153,6 +153,6 @@
     }
   ],
   "credits": [
-    "JustGotenks"
+    "JustGotenks, edit by Chronoss"
   ]
 }

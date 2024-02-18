@@ -20,6 +20,18 @@
           "off": "0FB6BE3E160000"
         }
       ]
+    },
+    {
+      "name": "Double Studs On Pick Up",
+      "hint": null,
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "9B735E",
+          "on": "49011F4881FB8096",
+          "off": "49891F4881FB8096"
+        }
+      ]
     }
   ],
   "credits": [
