@@ -1,0 +1,10 @@
+CACHE MANIFEST
+# PSFree-Lapse
+
+cache.html
+index.html
+bundle.js
+payload.bin
+
+NETWORK:
+*
