@@ -289,7 +289,7 @@ function pldone() {
     </div>
     <br>
     <div class="button-container">
-      <button class="btnkme" onMouseOver="msgs.innerHTML='np fake signin ps5'" onmouseout="msgs.innerHTML='PS4 900FW Payloads (Manual Method) Offline'" onclick="load_np_fake_signin_ps5(); return false">np fake signin ps5</button>
+      <button class="btnkme" onMouseOver="msgs.innerHTML='np fake signin ps4'" onmouseout="msgs.innerHTML='PS4 900FW Payloads (Manual Method) Offline'" onclick="load_np_fake_signin_ps4(); return false">np fake signin ps4</button>
       <button class="btnkme" onMouseOver="msgs.innerHTML='app2usb'" onmouseout="msgs.innerHTML='PS4 900FW Payloads (Manual Method) Offline'" onclick="load_app2usb_bin(); return false">app2usb</button>
       <button class="btnkme" onMouseOver="msgs.innerHTML='backup'" onmouseout="msgs.innerHTML='PS4 900FW Payloads (Manual Method) Offline'" onclick="load_backup_bin(); return false">backup</button>
       <button class="btnkme" onMouseOver="msgs.innerHTML='disable updates'" onmouseout="msgs.innerHTML='PS4 900FW Payloads (Manual Method) Offline'" onclick="load_disable_updates_bin(); return false">disable updates</button>
@@ -306,10 +306,10 @@ function pldone() {
       <button class="btnkme" onMouseOver="msgs.innerHTML='Apollo'" onmouseout="msgs.innerHTML='PS4 900FW Payloads (Manual Method) Offline'" onclick="load_Apollo_elf(); return false">Apollo</button>
       <button class="btnkme" onMouseOver="msgs.innerHTML='GoldHen18.9'" onmouseout="msgs.innerHTML='PS4 900FW Payloads (Manual Method) Offline'" onclick="load_GoldHen18_9_elf(); return false">GoldHen18.9</button>
       <button class="btnkme" onMouseOver="msgs.innerHTML='PS4 Xplorer 2 0'" onmouseout="msgs.innerHTML='PS4 900FW Payloads (Manual Method) Offline'" onclick="load_PS4_Xplorer_2_0_elf(); return false">PS4 Xplorer 2 0</button>
-      <button class="btnkme" onMouseOver="msgs.innerHTML='VueStage1'" onmouseout="msgs.innerHTML='PS4 900FW Payloads (Manual Method) Offline'" onclick="load_VueStage1_elf(); return false">VueStage1</button>
-      <button class="btnkme" onMouseOver="msgs.innerHTML='VueStage2'" onmouseout="msgs.innerHTML='PS4 900FW Payloads (Manual Method) Offline'" onclick="load_VueStage2_elf(); return false">VueStage2</button>
-      <button class="btnkme" onMouseOver="msgs.innerHTML='download0File'" onmouseout="msgs.innerHTML='PS4 900FW Payloads (Manual Method) Offline'" onclick="load_download0File_elf(); return false">download0File</button>
-      <button class="btnkme" onMouseOver="msgs.innerHTML='saveFile'" onmouseout="msgs.innerHTML='PS4 900FW Payloads (Manual Method) Offline'" onclick="load_saveFile_elf(); return false">saveFile</button>
+      <button class="btnkme" onMouseOver="msgs.innerHTML='Vue Stage 1'" onmouseout="msgs.innerHTML='PS4 900FW Payloads (Manual Method) Offline'" onclick="load_VueStage1_elf(); return false">VueStage1</button>
+      <button class="btnkme" onMouseOver="msgs.innerHTML='Vue Stage 2'" onmouseout="msgs.innerHTML='PS4 900FW Payloads (Manual Method) Offline'" onclick="load_VueStage2_elf(); return false">VueStage2</button>
+      <button class="btnkme" onMouseOver="msgs.innerHTML='Vue dat File'" onmouseout="msgs.innerHTML='PS4 900FW Payloads (Manual Method) Offline'" onclick="load_download0File_elf(); return false">download0File</button>
+      <button class="btnkme" onMouseOver="msgs.innerHTML='Apollo Vue Save File'" onmouseout="msgs.innerHTML='PS4 900FW Payloads (Manual Method) Offline'" onclick="load_saveFile_elf(); return false">Vue Save File</button>
       <button class="btnkme" onMouseOver="msgs.innerHTML='Orbis Tool Box v1190 - By OSM'" ; onmouseout="msgs.innerHTML='PS4 900FW Payloads (Manual Method) Offline'" onclick="load_orbistoolbox(); return false">Orbis ToolBox</button>
       <button class="btnkme" onMouseOver="msgs.innerHTML='WebRTE v1.0 - By PS4 Trainer'" ; onmouseout="msgs.innerHTML='PS4 900FW Payloads (Manual Method) Offline'" onclick="load_webrte(); return false">WebRTE</button>
       <button class="btnkme" onMouseOver="msgs.innerHTML='Game Dumper Mod by Kameleon v1.1'" ; onmouseout="msgs.innerHTML='PS4 900FW Payloads (Manual Method) Offline'" onclick="load_dumper(); return false">PGK Extractor</button>
@@ -876,10 +876,10 @@ function pldone() {
       }
     }
 
-    function load_np_fake_signin_ps5() {
-      msgs.innerHTML = "<h1 style='font-size:25px;text-align:center;'>Loading np fake signin ps5. Please wait 20-30 seconds!!!</h1>";
-      LoadedMSG = "np fake signin ps5 Loaded";
-      PLfile = "np-fake-signin-ps5.bin";
+    function load_np_fake_signin_ps4() {
+      msgs.innerHTML = "<h1 style='font-size:25px;text-align:center;'>Loading PSN Fake Sign-In. Please wait 20-30 seconds!!!</h1>";
+      LoadedMSG = "PS4 Fake Sign-In Loaded";
+      PLfile = "np-fake-signin-ps4.elf";
       if (sessionStorage.plrunmethod == "sandboxesc") {
         loadPayloadData();
       } else if (sessionStorage.plrunmethod == "ghen20binserver") {
@@ -1008,10 +1008,10 @@ function pldone() {
       }
     }
 
-    function load_ftpsrv_ps4_bin() {
-      msgs.innerHTML = "<h1 style='font-size:25px;text-align:center;'>Loading ftpsrv ps4. Please wait 20-30 seconds!!!</h1>";
-      LoadedMSG = "ftpsrv ps4 Loaded";
-      PLfile = "ftpsrv-ps4.bin";
+    function load_ftpsrv_ps5_bin() {
+      msgs.innerHTML = "<h1 style='font-size:25px;text-align:center;'>Loading ftpsrv ps5. Please wait 20-30 seconds!!!</h1>";
+      LoadedMSG = "ftpsrv ps5 Loaded";
+      PLfile = "ftpsrv-ps5.bin";
       if (sessionStorage.plrunmethod == "sandboxesc") {
         loadPayloadData();
       } else if (sessionStorage.plrunmethod == "ghen20binserver") {
@@ -1019,10 +1019,10 @@ function pldone() {
       }
     }
 
-    function load_ftpsrv_ps5_bin() {
+    function load_ftpsrv_ps4_bin() {
       msgs.innerHTML = "<h1 style='font-size:25px;text-align:center;'>Loading ftpsrv ps5. Please wait 20-30 seconds!!!</h1>";
-      LoadedMSG = "ftpsrv ps5 Loaded";
-      PLfile = "ftpsrv-ps5.bin";
+      LoadedMSG = "ftpsrv ps4 Loaded";
+      PLfile = "ftpsrv-ps4.bin";
       if (sessionStorage.plrunmethod == "sandboxesc") {
         loadPayloadData();
       } else if (sessionStorage.plrunmethod == "ghen20binserver") {
@@ -1064,8 +1064,8 @@ function pldone() {
     }
 
     function load_VueStage1_elf() {
-      msgs.innerHTML = "<h1 style='font-size:25px;text-align:center;'>Loading VueStage1. Please wait 20-30 seconds!!!</h1>";
-      LoadedMSG = "VueStage1 Loaded";
+      msgs.innerHTML = "<h1 style='font-size:25px;text-align:center;'>Loading Vue Stage 1. Please wait 20-30 seconds!!!</h1>";
+      LoadedMSG = "Vue Stage 1 Loaded";
       PLfile = "VueStage1.elf";
       if (sessionStorage.plrunmethod == "sandboxesc") {
         loadPayloadData();
@@ -1075,8 +1075,8 @@ function pldone() {
     }
 
     function load_VueStage2_elf() {
-      msgs.innerHTML = "<h1 style='font-size:25px;text-align:center;'>Loading VueStage2. Please wait 20-30 seconds!!!</h1>";
-      LoadedMSG = "VueStage2 Loaded";
+      msgs.innerHTML = "<h1 style='font-size:25px;text-align:center;'>Loading Vue Stage 2. Please wait 20-30 seconds!!!</h1>";
+      LoadedMSG = "Vue Stage 2 Loaded";
       PLfile = "VueStage2.elf";
       if (sessionStorage.plrunmethod == "sandboxesc") {
         loadPayloadData();
@@ -1086,8 +1086,8 @@ function pldone() {
     }
 
     function load_download0File_elf() {
-      msgs.innerHTML = "<h1 style='font-size:25px;text-align:center;'>Loading download0File. Please wait 20-30 seconds!!!</h1>";
-      LoadedMSG = "download0File Loaded";
+      msgs.innerHTML = "<h1 style='font-size:25px;text-align:center;'>Loading Vue dat File. Please wait 20-30 seconds!!!</h1>";
+      LoadedMSG = "Vue dat File Loaded";
       PLfile = "download0File.elf";
       if (sessionStorage.plrunmethod == "sandboxesc") {
         loadPayloadData();
@@ -1097,8 +1097,8 @@ function pldone() {
     }
 
     function load_saveFile_elf() {
-      msgs.innerHTML = "<h1 style='font-size:25px;text-align:center;'>Loading saveFile. Please wait 20-30 seconds!!!</h1>";
-      LoadedMSG = "saveFile Loaded";
+      msgs.innerHTML = "<h1 style='font-size:25px;text-align:center;'>Loading Apollo Save File. Please wait 20-30 seconds!!!</h1>";
+      LoadedMSG = "Apollo Save File Loaded";
       PLfile = "saveFile.elf";
       if (sessionStorage.plrunmethod == "sandboxesc") {
         loadPayloadData();

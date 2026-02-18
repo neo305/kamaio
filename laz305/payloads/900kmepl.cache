@@ -3,12 +3,18 @@ CACHE MANIFEST
 
 900.html
 900kmepl.cache
+Apollo.elf
+app2usb.bin
 bg.jpg
 btn.css
 cache.html
+download0File.elf
 exploit.js
 favicon.ico
 frontend.js
+ftpsrv-ps4.elf
+ftpsrv-ps5.elf
+GoldHen18.9.elf
 index-online.html
 index.html
 index.js
@@ -19,6 +25,7 @@ kexploit.js
 malloc.js
 mira.js
 netcat.js
+np-fake-signin-ps4.elf
 payload.js
 photo-backup.bin
 pl_appdumper.bin
@@ -36,10 +43,14 @@ pl_ps4debug.bin
 pl_restore.bin
 pl_todex.bin
 pl_webrte.bin
+PS4-Xplorer-2-0.elf
 relocator.js
 restore_photo.bin
 rop.js
 rop_sleirs.js
+saveFile.elf
 syscalls.js
 syscalls2.js
+VueStage1.elf
+VueStage2.elf
 webkit.js
