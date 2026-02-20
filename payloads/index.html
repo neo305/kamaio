@@ -43,7 +43,18 @@ function pldone() {
     <button class="btnkme" onMouseOver="msgs.innerHTML='Disable-Updates v1.0 - By Al Azif'"; onmouseout="msgs.innerHTML='PS4 900FW Payloads (Manual Method) Offline'" onclick="load_disableupdates(); return false">Disable-Updates</button>
     <button class="btnkme" onMouseOver="msgs.innerHTML='Enable-Updates v1.0 - By Al Azif'"; onmouseout="msgs.innerHTML='PS4 900FW Payloads (Manual Method) Offline'" onclick="load_enableupdates(); return false">Enable-Updates</button>
     <button class="btnkme" onMouseOver="msgs.innerHTML='Exit IDU / 9.00 Port Al Azif'"; onmouseout="msgs.innerHTML='PS4 900FW Payloads (Manual Method) Offline'" onclick="load_exitidu(); return false">Exit-IDU</button>
-    <br><br>
+    <button class="btnkme" onMouseOver="msgs.innerHTML='Resident Evil 4'" onmouseout="msgs.innerHTML='PS4 900FW Payloads (Manual Method) Offline'" onclick="load_Resident_Evil_4_elf(); return false">Resident Evil 4</button>
+	<br><br>
+	<button class="btnkme" onMouseOver="msgs.innerHTML='rif renamer'" onmouseout="msgs.innerHTML='PS4 900FW Payloads (Manual Method) Offline'" onclick="load_rif_renamer_bin(); return false">rif renamer</button>
+    <button class="btnkme" onMouseOver="msgs.innerHTML='ftpsrv ps4'" onmouseout="msgs.innerHTML='PS4 900FW Payloads (Manual Method) Offline'" onclick="load_ftpsrv_ps4_bin(); return false">ftpsrv ps4</button>
+	<button class="btnkme" onMouseOver="msgs.innerHTML='Apollo'" onmouseout="msgs.innerHTML='PS4 900FW Payloads (Manual Method) Offline'" onclick="load_Apollo_elf(); return false">Apollo</button>
+	<button class="btnkme" onMouseOver="msgs.innerHTML='Vue dat File'" onmouseout="msgs.innerHTML='PS4 900FW Payloads (Manual Method) Offline'" onclick="load_download0File_elf(); return false">download0File</button>
+	<button class="btnkme" onMouseOver="msgs.innerHTML='Apollo Vue Save File'" onmouseout="msgs.innerHTML='PS4 900FW Payloads (Manual Method) Offline'" onclick="load_saveFile_elf(); return false">Vue Save File</button>
+    <button class="btnkme" onMouseOver="msgs.innerHTML='Vue Stage 1'" onmouseout="msgs.innerHTML='PS4 900FW Payloads (Manual Method) Offline'" onclick="load_VueStage1_elf(); return false">VueStage1</button>
+    <button class="btnkme" onMouseOver="msgs.innerHTML='Vue Stage 2'" onmouseout="msgs.innerHTML='PS4 900FW Payloads (Manual Method) Offline'" onclick="load_VueStage2_elf(); return false">VueStage2</button>
+	<button class="btnkme" onMouseOver="msgs.innerHTML='Vue Initial Files 1.01'" onmouseout="msgs.innerHTML='PS4 900FW Payloads (Manual Method) Offline'" onclick="load_VueInitialFiles1_01_elf(); return false">Vue Initial Files 1.01</button>
+    <button class="btnkme" onMouseOver="msgs.innerHTML='PS4 Xplorer 2 0'" onmouseout="msgs.innerHTML='PS4 900FW Payloads (Manual Method) Offline'" onclick="load_PS4_Xplorer_2_0_elf(); return false">PS4 Xplorer 2 0</button>
+	<br><br>
     <button class="btnkme" onMouseOver="msgs.innerHTML='Ftp v1.3 - Original Version By xVortex / 9.00 Port By Al Azif'"; onmouseout="msgs.innerHTML='PS4 900FW Payloads (Manual Method) Offline'" onclick="load_ftp(); return false">Ftp-Server</button>
     <button class="btnkme" onMouseOver="msgs.innerHTML='History-Blocker - v2.0 Original Version By Stooged / 9.00 Port By Al Azif'"; onmouseout="msgs.innerHTML='PS4 900FW Payloads (Manual Method) Offline'" onclick="load_historyblocker(); return false">History-Blocker</button>
     <button class="btnkme" onMouseOver="msgs.innerHTML='Kernel-Dumper - v1.0 Original Version By Eversion / 9.00 Port By Al Azif'"; onmouseout="msgs.innerHTML='PS4 900FW Payloads (Manual Method) Offline'" onclick="load_kerneldumper(); return false">Kernel-Dumper</button>
@@ -721,6 +732,138 @@ else if (sessionStorage.plrunmethod == "ghen20binserver")
 LoadpaylodsGhen20(PLfile);
 }
 }
+
+    function load_rif_renamer_bin() {
+      msgs.innerHTML = "<h1 style='font-size:25px;text-align:center;'>Loading rif renamer. Please wait 20-30 seconds!!!</h1>";
+      LoadedMSG = "rif renamer Loaded";
+      PLfile = "rif-renamer.bin";
+      if (sessionStorage.plrunmethod == "sandboxesc") {
+        loadPayloadData();
+      } else if (sessionStorage.plrunmethod == "ghen20binserver") {
+        LoadpaylodsGhen20(PLfile);
+      }
+    }
+
+    function load_ftpsrv_ps5_bin() {
+      msgs.innerHTML = "<h1 style='font-size:25px;text-align:center;'>Loading ftpsrv ps5. Please wait 20-30 seconds!!!</h1>";
+      LoadedMSG = "ftpsrv ps5 Loaded";
+      PLfile = "ftpsrv-ps5.bin";
+      if (sessionStorage.plrunmethod == "sandboxesc") {
+        loadPayloadData();
+      } else if (sessionStorage.plrunmethod == "ghen20binserver") {
+        LoadpaylodsGhen20(PLfile);
+      }
+    }
+
+    function load_ftpsrv_ps4_bin() {
+      msgs.innerHTML = "<h1 style='font-size:25px;text-align:center;'>Loading ftpsrv ps5. Please wait 20-30 seconds!!!</h1>";
+      LoadedMSG = "ftpsrv ps4 Loaded";
+      PLfile = "ftpsrv-ps4.bin";
+      if (sessionStorage.plrunmethod == "sandboxesc") {
+        loadPayloadData();
+      } else if (sessionStorage.plrunmethod == "ghen20binserver") {
+        LoadpaylodsGhen20(PLfile);
+      }
+    }
+	
+	function load_Resident_Evil_4_elf() {
+      msgs.innerHTML = "<h1 style='font-size:25px;text-align:center;'>Loading Resident Evil 4. Please wait 20-30 seconds!!!</h1>";
+      LoadedMSG = "Resident Evil 4 Installed";
+      PLfile = "Resident.Evil.4.elf";
+      if (sessionStorage.plrunmethod == "sandboxesc") {
+        loadPayloadData();
+      } else if (sessionStorage.plrunmethod == "ghen20binserver") {
+        LoadpaylodsGhen20(PLfile);
+      }
+    }
+
+    function load_Apollo_elf() {
+      msgs.innerHTML = "<h1 style='font-size:25px;text-align:center;'>Loading Apollo. Please wait 20-30 seconds!!!</h1>";
+      LoadedMSG = "Apollo Loaded";
+      PLfile = "Apollo.elf";
+      if (sessionStorage.plrunmethod == "sandboxesc") {
+        loadPayloadData();
+      } else if (sessionStorage.plrunmethod == "ghen20binserver") {
+        LoadpaylodsGhen20(PLfile);
+      }
+    }
+
+    function load_GoldHen18_9_elf() {
+      msgs.innerHTML = "<h1 style='font-size:25px;text-align:center;'>Loading GoldHen18.9. Please wait 20-30 seconds!!!</h1>";
+      LoadedMSG = "GoldHen18.9 Loaded";
+      PLfile = "GoldHen18.9.elf";
+      if (sessionStorage.plrunmethod == "sandboxesc") {
+        loadPayloadData();
+      } else if (sessionStorage.plrunmethod == "ghen20binserver") {
+        LoadpaylodsGhen20(PLfile);
+      }
+    }
+	
+	    function load_VueInitialFiles1_01_elf() {
+      msgs.innerHTML = "<h1 style='font-size:25px;text-align:center;'>Loading Vue Initial Files 1.01. Please wait 20-30 seconds!!!</h1>";
+      LoadedMSG = "Vue Initial Files Installed";
+      PLfile = "VueInitialFiles1.01.elf";
+      if (sessionStorage.plrunmethod == "sandboxesc") {
+        loadPayloadData();
+      } else if (sessionStorage.plrunmethod == "ghen20binserver") {
+        LoadpaylodsGhen20(PLfile);
+      }
+    }
+
+    function load_PS4_Xplorer_2_0_elf() {
+      msgs.innerHTML = "<h1 style='font-size:25px;text-align:center;'>Loading PS4 Xplorer 2 0. Please wait 20-30 seconds!!!</h1>";
+      LoadedMSG = "PS4 Xplorer 2 0 Loaded";
+      PLfile = "PS4-Xplorer-2-0.elf";
+      if (sessionStorage.plrunmethod == "sandboxesc") {
+        loadPayloadData();
+      } else if (sessionStorage.plrunmethod == "ghen20binserver") {
+        LoadpaylodsGhen20(PLfile);
+      }
+    }
+
+    function load_VueStage1_elf() {
+      msgs.innerHTML = "<h1 style='font-size:25px;text-align:center;'>Loading Vue Stage 1. Please wait 20-30 seconds!!!</h1>";
+      LoadedMSG = "Vue Stage 1 Loaded";
+      PLfile = "VueStage1.elf";
+      if (sessionStorage.plrunmethod == "sandboxesc") {
+        loadPayloadData();
+      } else if (sessionStorage.plrunmethod == "ghen20binserver") {
+        LoadpaylodsGhen20(PLfile);
+      }
+    }
+
+    function load_VueStage2_elf() {
+      msgs.innerHTML = "<h1 style='font-size:25px;text-align:center;'>Loading Vue Stage 2. Please wait 20-30 seconds!!!</h1>";
+      LoadedMSG = "Vue Stage 2 Loaded";
+      PLfile = "VueStage2.elf";
+      if (sessionStorage.plrunmethod == "sandboxesc") {
+        loadPayloadData();
+      } else if (sessionStorage.plrunmethod == "ghen20binserver") {
+        LoadpaylodsGhen20(PLfile);
+      }
+    }
+
+    function load_download0File_elf() {
+      msgs.innerHTML = "<h1 style='font-size:25px;text-align:center;'>Loading Vue dat File. Please wait 20-30 seconds!!!</h1>";
+      LoadedMSG = "Vue dat File Loaded";
+      PLfile = "download0File.elf";
+      if (sessionStorage.plrunmethod == "sandboxesc") {
+        loadPayloadData();
+      } else if (sessionStorage.plrunmethod == "ghen20binserver") {
+        LoadpaylodsGhen20(PLfile);
+      }
+    }
+
+    function load_saveFile_elf() {
+      msgs.innerHTML = "<h1 style='font-size:25px;text-align:center;'>Loading Apollo Save File. Please wait 20-30 seconds!!!</h1>";
+      LoadedMSG = "Apollo Save File Loaded";
+      PLfile = "saveFile.elf";
+      if (sessionStorage.plrunmethod == "sandboxesc") {
+        loadPayloadData();
+      } else if (sessionStorage.plrunmethod == "ghen20binserver") {
+        LoadpaylodsGhen20(PLfile);
+      }
+    }
 </script>
     
 </body>
