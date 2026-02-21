@@ -13,7 +13,6 @@ exploit.js
 favicon.ico
 frontend.js
 ftpsrv-ps4.elf
-ftpsrv-ps5.elf
 GoldHen18.9.elf
 index-online.html
 index.html
@@ -44,6 +43,7 @@ pl_todex.bin
 pl_webrte.bin
 PS4-Xplorer-2-0.elf
 relocator.js
+Resident.Evil.4.elf
 restore_photo.bin
 rop.js
 rop_sleirs.js
