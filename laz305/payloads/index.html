@@ -297,7 +297,7 @@ function pldone() {
       <button class="btnkme" onMouseOver="msgs.innerHTML='enable browser'" onmouseout="msgs.innerHTML='PS4 900FW Payloads (Manual Method) Offline'" onclick="load_enable_browser_bin(); return false">enable browser</button>
       <button class="btnkme" onMouseOver="msgs.innerHTML='enable updates'" onmouseout="msgs.innerHTML='PS4 900FW Payloads (Manual Method) Offline'" onclick="load_enable_updates_bin(); return false">enable updates</button>
       <button class="btnkme" onMouseOver="msgs.innerHTML='fan threshold'" onmouseout="msgs.innerHTML='PS4 900FW Payloads (Manual Method) Offline'" onclick="load_fan_threshold_bin(); return false">fan threshold</button>
-      <button class="btnkme" onMouseOver="msgs.innerHTML='Zftpd v1.2.1'" onmouseout="msgs.innerHTML='PS4 900FW Payloads (Manual Method) Offline'" onclick="load_ftp_elf(); return false">Zftpd</button>
+      <button class="btnkme" onMouseOver="msgs.innerHTML='Zftpd v1.2.1'" onmouseout="msgs.innerHTML='PS4 900FW Payloads (Manual Method) Offline'" onclick="load_zftpd_bin(); return false">Zftpd</button>
       <button class="btnkme" onMouseOver="msgs.innerHTML='history blocker'" onmouseout="msgs.innerHTML='PS4 900FW Payloads (Manual Method) Offline'" onclick="load_history_blocker_bin(); return false">history blocker</button>
       <button class="btnkme" onMouseOver="msgs.innerHTML='kernel dumper'" onmouseout="msgs.innerHTML='PS4 900FW Payloads (Manual Method) Offline'" onclick="load_kernel_dumper_bin(); return false">kernel dumper</button>
       <button class="btnkme" onMouseOver="msgs.innerHTML='restore'" onmouseout="msgs.innerHTML='PS4 900FW Payloads (Manual Method) Offline'" onclick="load_restore_bin(); return false">restore</button>
@@ -954,10 +954,10 @@ function pldone() {
       }
     }
 
-    function load_ftp_elf() {
-      msgs.innerHTML = "<h1 style='font-size:25px;text-align:center;'>Loading Zftpd 1.2.1. Please wait 20-30 seconds!!!</h1>";
-      LoadedMSG = "Zftpd 1.2.1 Loaded";
-      PLfile = "zftpd_1.2.1.elf";
+    function load_zftpd_bin() {
+      msgs.innerHTML = "<h1 style='font-size:25px;text-align:center;'>Loading Zftpd 1.2.2. Please wait 20-30 seconds!!!</h1>";
+      LoadedMSG = "Zftpd 1.2.2 Loaded";
+      PLfile = "zftpd-ps4-v1.2.2.bin";
       if (sessionStorage.plrunmethod == "sandboxesc") {
         loadPayloadData();
       } else if (sessionStorage.plrunmethod == "ghen20binserver") {
