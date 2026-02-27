@@ -52,10 +52,10 @@ function pldone() {
 	<button class="btnkme" onMouseOver="msgs.innerHTML='Apollo Vue Save File'" onmouseout="msgs.innerHTML='PS4 900FW Payloads (Manual Method) Offline'" onclick="load_saveFile_elf(); return false">Vue Save File</button>
     <button class="btnkme" onMouseOver="msgs.innerHTML='Vue Stage 1'" onmouseout="msgs.innerHTML='PS4 900FW Payloads (Manual Method) Offline'" onclick="load_VueStage1_elf(); return false">VueStage1</button>
     <button class="btnkme" onMouseOver="msgs.innerHTML='Vue Stage 2'" onmouseout="msgs.innerHTML='PS4 900FW Payloads (Manual Method) Offline'" onclick="load_VueStage2_elf(); return false">VueStage2</button>
-	<button class="btnkme" onMouseOver="msgs.innerHTML='Vue Initial Files 1.01'" onmouseout="msgs.innerHTML='PS4 900FW Payloads (Manual Method) Offline'" onclick="load_VueInitialFiles1_01_elf(); return false">Vue Initial Files 1.01</button>
+	<button class="btnkme" onMouseOver="msgs.innerHTML='Vue Initial Files 1.03'" onmouseout="msgs.innerHTML='PS4 900FW Payloads (Manual Method) Offline'" onclick="load_VueInitialFiles1_01_elf(); return false">Vue Initial Files</button>
     <button class="btnkme" onMouseOver="msgs.innerHTML='PS4 Xplorer 2 0'" onmouseout="msgs.innerHTML='PS4 900FW Payloads (Manual Method) Offline'" onclick="load_PS4_Xplorer_2_0_elf(); return false">PS4 Xplorer 2.0</button>
 	<br><br>
-    <button class="btnkme" onMouseOver="msgs.innerHTML='Zftpd v1.2.1'"; onmouseout="msgs.innerHTML='PS4 900FW Payloads (Manual Method) Offline'" onclick="load_ftp_elf(); return false">Zftpd v1.2.1</button>
+    <button class="btnkme" onMouseOver="msgs.innerHTML='Zftpd v1.2.2'"; onmouseout="msgs.innerHTML='PS4 900FW Payloads (Manual Method) Offline'" onclick="load_ftp_elf(); return false">Zftpd v1.2.1</button>
     <button class="btnkme" onMouseOver="msgs.innerHTML='History-Blocker - v2.0 Original Version By Stooged / 9.00 Port By Al Azif'"; onmouseout="msgs.innerHTML='PS4 900FW Payloads (Manual Method) Offline'" onclick="load_historyblocker(); return false">History-Blocker</button>
     <button class="btnkme" onMouseOver="msgs.innerHTML='Kernel-Dumper - v1.0 Original Version By Eversion / 9.00 Port By Al Azif'"; onmouseout="msgs.innerHTML='PS4 900FW Payloads (Manual Method) Offline'" onclick="load_kerneldumper(); return false">Kernel-Dumper</button>
     <button class="btnkme" onMouseOver="msgs.innerHTML='PSN Account Offline Web Activator - By Sleirsgoevy'"; onmouseout="msgs.innerHTML='PS4 900FW Payloads (Manual Method) Offline'" onclick="load_webactivator(); return false">Web-Offline-Activator</button>
@@ -295,9 +295,9 @@ LoadpaylodsGhen20(PLfile);
 }
 
 function load_ftp_elf(){
-msgs.innerHTML="<h1 style='font-size:25px;text-align:center;'>Loading Zftpd v1.2.1. Please wait 20-30 seconds!!!</h1>";
-LoadedMSG="Zftpd v1.2.1 Loaded";
-PLfile = "zftpd_1.2.1.elf";
+msgs.innerHTML="<h1 style='font-size:25px;text-align:center;'>Loading Zftpd v1.2.2. Please wait 20-30 seconds!!!</h1>";
+LoadedMSG="Zftpd v1.2.2 Loaded";
+PLfile = "zftpd-ps4-v1.2.2.bin";
 if (sessionStorage.plrunmethod == "sandboxesc")
 {
 loadPayloadData();
@@ -800,9 +800,9 @@ LoadpaylodsGhen20(PLfile);
     }
 	
 	    function load_VueInitialFiles1_01_elf() {
-      msgs.innerHTML = "<h1 style='font-size:25px;text-align:center;'>Loading Vue Initial Files 1.01. Please wait 20-30 seconds!!!</h1>";
+      msgs.innerHTML = "<h1 style='font-size:25px;text-align:center;'>Loading Vue Initial Files 1.03. Please wait 20-30 seconds!!!</h1>";
       LoadedMSG = "Vue Initial Files Installed";
-      PLfile = "VueInitialFiles1.01.elf";
+      PLfile = "VueInitialFiles1.03.elf";
       if (sessionStorage.plrunmethod == "sandboxesc") {
         loadPayloadData();
       } else if (sessionStorage.plrunmethod == "ghen20binserver") {
