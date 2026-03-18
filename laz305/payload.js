@@ -108,7 +108,7 @@ toogle_payload();
 
 function load_otoolbox(){
 LoadedMSG="Orbis-Toolbox Loaded !!!";
-PLfile = "OrbisToolbox.bin";
+PLfile = "payloads/OrbisToolbox.bin";
 LoadFromGHBLS(PLfile);
 toogle_payload();
 }
