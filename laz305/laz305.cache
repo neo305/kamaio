@@ -94,6 +94,8 @@ syscalls.js
 syscalls2.js
 theme.html
 webkit.js
+img/FanControl.png
+img/icon.gif
 module\chain.mjs
 module\constants.js
 module\constants.mjs
@@ -108,6 +110,7 @@ module\rw.js
 module\rw.mjs
 module\utils.js
 module\utils.mjs
+document\en\ps4\6.jpg
 document\en\ps4\cache.manifest
 document\en\ps4\index.html
 document\en\ps4\cache.html

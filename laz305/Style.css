@@ -37,6 +37,13 @@ background-size:cover;
   animation-name: animatetop;
   animation-duration: 0.4s
 }
+.icon {
+    position: absolute;
+    width: 130px;
+    height: 130px;
+    bottom: 13%;
+    left: 0%;
+} 
 .vid
 {
     object-fit: inherit;
@@ -47,6 +54,14 @@ background-size:cover;
     min-width: 100%;
     min-height: 100%;
     opacity: 0.4;
+}
+.icone{
+    width: 180px;
+    height: 60px;
+}
+.icons{
+    width: 60px;
+    height: 60px;
 }
 .bg-darker {
     background-color: #24272b !important;
