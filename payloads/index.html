@@ -9,6 +9,217 @@ body{background-image: url("bg.jpg"); background-size: 100%;
 color:white;font-size:20px;text-align:center;margin:0;overflow:hidden;}
 .info{overflow: hidden;position: fixed;position: absolute;top: 45%;left: 50%;font-size: 25px;font-family: sans-serif;color: #b8b8b8;transform: translate(-50%, -50%);}
 .button{background-color: white;color: black;height: 5%;width: 13,7%;cursor: pointer;font-size: medium;}
+
+  .themes {
+   width:98%;
+   margin:0 auto;
+   margin-left:2%;
+   margin-top:2%;
+  }
+  .theme {
+    background:rgba(0,0,0,0.75);
+    width:14.1%;
+    text-align:center;
+    display:inline-block;
+    margin-right:2.5%;
+    margin-bottom:2.5%;
+  }
+  .theme img {
+    width:100%;
+  }
+  .theme span  {
+   color:white;
+   display:block;
+   padding:10px;
+  }
+       .notification {
+            display: flex;
+            top: 3%;
+            right: 2%;
+            position: fixed;
+            background-color: rgba(30, 30, 50, 0.5);
+            color: rgb(255, 255, 255);
+            padding: 5px;
+            border-radius: 1px;
+            box-shadow: 0px 0px 5px;
+            font-weight: bold;
+            animation: slide 500ms;
+        }
+        @keyframes slide {
+            from {
+                transform: translateX(120%);
+            }
+            to {
+                transform: translateX(0%);
+            }
+        }
+        .notification2 {
+            display: flex;
+            top: 3%;
+            right: 2%;
+            position: fixed;
+            background-color: rgba(30, 30, 50, 0.5);
+            color: rgb(255, 255, 255);
+            padding: 5px;
+            border-radius: 1px;
+            box-shadow: 0px 0px 5px;
+            font-weight: bold;
+            animation: slide2 500ms;
+        }
+        @keyframes slide2 {
+            from {
+                transform: translateX(0%);
+            }
+            to {
+                transform: translateX(120%);
+            }
+        }
+		button {
+		  background:rgba(0,0,0,0.5);
+		  box-shadow: 0 5px 20px 0 white;
+		  border: 2px solid black;
+		  border-radius: 10px 100px / 120px;             
+		  color: white;
+		  text-decoration: none;
+		  width: 200px;
+          height: 40px;
+		  display:inline-table;
+		  font-family: sans-serif;
+		  font-size:16px;
+		  text-align: center;
+		}
+
+		button:focus,
+		button:hover {
+		  color: White;
+		  box-shadow: 0 5px 50px 0 white;
+		  background-color: #87FF33;
+                  border-radius: 10px 100px / 120px;
+		}
+h1 {
+text-shadow: 0.1em 0.1em 0.2em black;
+font-size: 25px;
+text-align: center;
+color: white;
+}
+
+.btn {
+background-color: #003263;
+color: white;
+width: 260px;
+height: 49px;
+padding-bottom: 5px;
+text-align: center;
+font-size: 20px;
+margin-top: 8px;
+margin-bottom: 8px;
+margin-left: 8px;
+margin-right: 8px;
+border-bottom-width: 0px;
+border-right-width: 0px;
+border-top-width: 0px;
+border-left-width: 0px;
+transition-duration: 0.4s;
+cursor: pointer;
+border-radius: 8px;
+}
+
+.btn:hover {
+background-color: #0058b1;
+}
+.btn-toolbox {
+background-color: #ae2301;
+}
+.btn-toolbox:hover {
+background-color: #d42a01;
+}
+
+a {
+text-decoration: none;
+}
+#jb-progress {
+display: block;
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 90px;
+  height: 34px;
+}
+
+.switch input {display:none;}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ca2222;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #2ab934;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(55px);
+  -ms-transform: translateX(55px);
+  transform: translateX(55px);
+}
+
+/*------ ADDED CSS ---------*/
+.on
+{
+  display: none;
+}
+
+.on, .off
+{
+  color: white;
+  position: absolute;
+  transform: translate(-50%,-50%);
+  top: 50%;
+  left: 50%;
+  font-size: 10px;
+  font-family: Verdana, sans-serif;
+}
+
+input:checked+ .slider .on
+{display: block;}
+
+input:checked + .slider .off
+{display: none;}
+
+/*--------- END --------*/
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;}
 </style>
 
 <script>
@@ -28,8 +239,9 @@ function pldone() {
 </head>
 
 <body onload="checkserverstatus();">
-  <h1 id=msgs style='font-size:25px;text-align:center;color:white'>PS4 900FW Payloads (Manual Method) Offline</h1>
+  <h1 id=msgs style='font-size:25px;text-align:center;color:white'>PS4 900FW Payloads (Offline)</h1>
   <button class="btnkme" onMouseOver="msgs.innerHTML='Back to Main Menu'"; onmouseout="msgs.innerHTML='PS4 900FW Payloads (Manual Method) Offline'" onclick="load_mainmenu(); return false">Back to Main Menu</button>
+  <br><br>
   <div id=mymenu style="text-align:center">
     <div text-align= center>Pass = <span id=passCounter></span>&nbsp;&nbsp;:&nbsp;&nbsp;Fail = <span id=failCounter></span></div>
     <div style="width:100%;font-size:20px;color:white">
@@ -37,37 +249,66 @@ function pldone() {
     <br>
 <div style="position: relative">
      <p style="position: fixed; bottom: 0; width:100%; text-align: center">
-    <button class="btnkme" onMouseOver="msgs.innerHTML='Orbis Tool Box v1190 - By OSM'"; onmouseout="msgs.innerHTML='PS4 900FW Payloads (Manual Method) Offline'" onclick="load_orbistoolbox(); return false">Orbis-Tool-Box</button>
-	<button class="btnkme" onMouseOver="msgs.innerHTML='WebRTE v1.0 - By PS4 Trainer'"; onmouseout="msgs.innerHTML='PS4 900FW Payloads (Manual Method) Offline'" onclick="load_webrte(); return false">WebRTE</button>
-    <button class="btnkme" onMouseOver="msgs.innerHTML='Game Dumper Mod by Kameleon v1.1'"; onmouseout="msgs.innerHTML='PS4 900FW Payloads (Manual Method) Offline'" onclick="load_dumper(); return false">PGK Extractor</button>
-    <button class="btnkme" onMouseOver="msgs.innerHTML='Disable-Updates v1.0 - By Al Azif'"; onmouseout="msgs.innerHTML='PS4 900FW Payloads (Manual Method) Offline'" onclick="load_disableupdates(); return false">Disable-Updates</button>
-    <button class="btnkme" onMouseOver="msgs.innerHTML='Enable-Updates v1.0 - By Al Azif'"; onmouseout="msgs.innerHTML='PS4 900FW Payloads (Manual Method) Offline'" onclick="load_enableupdates(); return false">Enable-Updates</button>
-    <button class="btnkme" onMouseOver="msgs.innerHTML='Exit IDU / 9.00 Port Al Azif'"; onmouseout="msgs.innerHTML='PS4 900FW Payloads (Manual Method) Offline'" onclick="load_exitidu(); return false">Exit-IDU</button>
-    <button class="btnkme" onMouseOver="msgs.innerHTML='Resident Evil 4'" onmouseout="msgs.innerHTML='PS4 900FW Payloads (Manual Method) Offline'" onclick="load_Resident_Evil_4_elf(); return false">Resident Evil 4</button>
-	<br><br>
-	<button class="btnkme" onMouseOver="msgs.innerHTML='rif renamer'" onmouseout="msgs.innerHTML='PS4 900FW Payloads (Manual Method) Offline'" onclick="load_rif_renamer_bin(); return false">rif renamer</button>
-    <button class="btnkme" onMouseOver="msgs.innerHTML='ftpsrv ps4'" onmouseout="msgs.innerHTML='PS4 900FW Payloads (Manual Method) Offline'" onclick="load_ftpsrv_ps4_bin(); return false">ftpsrv ps4</button>
-	<button class="btnkme" onMouseOver="msgs.innerHTML='Apollo'" onmouseout="msgs.innerHTML='PS4 900FW Payloads (Manual Method) Offline'" onclick="load_Apollo_elf(); return false">Apollo</button>
-	<button class="btnkme" onMouseOver="msgs.innerHTML='Vue dat File'" onmouseout="msgs.innerHTML='PS4 900FW Payloads (Manual Method) Offline'" onclick="load_download0File_elf(); return false">Vue dat File</button>
-	<button class="btnkme" onMouseOver="msgs.innerHTML='Apollo Vue Save File'" onmouseout="msgs.innerHTML='PS4 900FW Payloads (Manual Method) Offline'" onclick="load_saveFile_elf(); return false">Vue Save File</button>
-    <button class="btnkme" onMouseOver="msgs.innerHTML='Vue Stage 1'" onmouseout="msgs.innerHTML='PS4 900FW Payloads (Manual Method) Offline'" onclick="load_VueStage1_elf(); return false">VueStage1</button>
-    <button class="btnkme" onMouseOver="msgs.innerHTML='Vue Stage 2'" onmouseout="msgs.innerHTML='PS4 900FW Payloads (Manual Method) Offline'" onclick="load_VueStage2_elf(); return false">VueStage2</button>
-	<button class="btnkme" onMouseOver="msgs.innerHTML='Vue Initial Files PKG v1.03 - By Lapy / elf By RajabbTechs'" onmouseout="msgs.innerHTML='PS4 900FW Payloads (Manual Method) Offline'" onclick="load_VueInitialFiles1_01_elf(); return false">Vue Initial Files</button>
-    <button class="btnkme" onMouseOver="msgs.innerHTML='PS4 Xplorer 2 0'" onmouseout="msgs.innerHTML='PS4 900FW Payloads (Manual Method) Offline'" onclick="load_PS4_Xplorer_2_0_elf(); return false">PS4 Xplorer 2.0</button>
-	<br><br>
-    <button class="btnkme" onMouseOver="msgs.innerHTML='Zftpd v1.2.2'"; onmouseout="msgs.innerHTML='PS4 900FW Payloads (Manual Method) Offline'" onclick="load_ftp_elf(); return false">Zftpd v1.2.2</button>
-    <button class="btnkme" onMouseOver="msgs.innerHTML='History-Blocker - v2.0 Original Version By Stooged / 9.00 Port By Al Azif'"; onmouseout="msgs.innerHTML='PS4 900FW Payloads (Manual Method) Offline'" onclick="load_historyblocker(); return false">History-Blocker</button>
-    <button class="btnkme" onMouseOver="msgs.innerHTML='Kernel-Dumper - v1.0 Original Version By Eversion / 9.00 Port By Al Azif'"; onmouseout="msgs.innerHTML='PS4 900FW Payloads (Manual Method) Offline'" onclick="load_kerneldumper(); return false">Kernel-Dumper</button>
-    <button class="btnkme" onMouseOver="msgs.innerHTML='PSN Account Offline Web Activator - By Sleirsgoevy'"; onmouseout="msgs.innerHTML='PS4 900FW Payloads (Manual Method) Offline'" onclick="load_webactivator(); return false">Web-Offline-Activator</button>
-    <button class="btnkme" onMouseOver="msgs.innerHTML='DB-Restore v1.0 - By Leeful / 9.00 Port Al Azif'"; onmouseout="msgs.innerHTML='PS4 900FW Payloads (Manual Method) Offline'" onclick="load_restore(); return false">DB-Restore</button>
-    <button class="btnkme" onMouseOver="msgs.innerHTML='DB-Backup v1.0 - By Leeful / 9.00 Port By Al Azif'"; onmouseout="msgs.innerHTML='PS4 900FW Payloads (Manual Method) Offline'" onclick="load_backup(); return false">DB-Backup</button>
-    <br><br>
-	<button class="btnkme" onMouseOver="msgs.innerHTML='Ps4Debug v1.1.14 - By CTN123'"; onmouseout="msgs.innerHTML='PS4 900FW Payloads (Manual Method) Offline'" onclick="load_ps4debug(); return false">Ps4Debug</button>
-    <button class="btnkme" onMouseOver="msgs.innerHTML='To-Dex v1.0 - By notzecoxao'"; onmouseout="msgs.innerHTML='PS4 900FW Payloads (Manual Method) Offline'" onclick="load_todex(); return false">To-Dex</button>
-    <button class="btnkme" onMouseOver="msgs.innerHTML='Backup Photo Gallery / 9.00 By Master'"; onmouseout="msgs.innerHTML='PS4 900FW Payloads (Manual Method) Offline'" onclick="load_app2usb(); return false">Photo Backup</button>
-    <button class="btnkme" onMouseOver="msgs.innerHTML='Photo Gallery Restore - 9.00 By Master'"; onmouseout="msgs.innerHTML='PS4 900FW Payloads (Manual Method) Offline'" onclick="load_uart(); return false">Retore Photo</button>
-    <button class="btnkme" onMouseOver="msgs.innerHTML='Disable ASLR - 9.00 Port By Al Azif'"; onmouseout="msgs.innerHTML='PS4 900FW Payloads (Manual Method) Offline'" onclick="load_disableaslr(); return false">Disable-ASLR</button>
-    <button class="btnkme" onMouseOver="msgs.innerHTML='Kernel-Module Dumper -  9.00 Port By Al Azif'"; onmouseout="msgs.innerHTML='PS4 900FW Payloads (Manual Method) Offline'" onclick="load_moduledumper(); return false">Kernel-Module-Dumper</button>
+      
+<button class="btnkme" onMouseOver="msgs.innerHTML='Apollo Save Tool v2.3.0 by bucanero / ELF by RajabTechs'" onmouseout="msgs.innerHTML='PS4 900FW Payloads (Manual Method) Offline'" onclick="load_Apollo_elf(); return false">Apollo</button>
+
+<button class="btnkme" onMouseOver="msgs.innerHTML='DB-Backup v1.0 - By Leeful / 9.00 Port By Al Azif'" onmouseout="msgs.innerHTML='PS4 900FW Payloads (Manual Method) Offline'" onclick="load_backup(); return false">DB Backup</button>
+
+<button class="btnkme" onMouseOver="msgs.innerHTML='DB-Restore v1.0 - By Leeful / 9.00 Port Al Azif'" onmouseout="msgs.innerHTML='PS4 900FW Payloads (Manual Method) Offline'" onclick="load_restore(); return false">DB Restore</button>
+
+<button class="btnkme" onMouseOver="msgs.innerHTML='Disable ASLR - 9.00 Port By Al Azif'" onmouseout="msgs.innerHTML='PS4 900FW Payloads (Manual Method) Offline'" onclick="load_disableaslr(); return false">Disable ASLR</button>
+
+<button class="btnkme" onMouseOver="msgs.innerHTML='Disable-Updates v1.0 - By Al Azif'" onmouseout="msgs.innerHTML='PS4 900FW Payloads (Manual Method) Offline'" onclick="load_disableupdates(); return false">Disable Updates</button>
+
+<button class="btnkme" onMouseOver="msgs.innerHTML='Re-enables the PS4 web browser'" onmouseout="msgs.innerHTML='PS4 900FW Payloads (Manual Method) Offline'" onclick="load_enablebrowser(); return false">Enable Browser</button>
+
+<button class="btnkme" onMouseOver="msgs.innerHTML='Enable-Updates v1.0 - By Al Azif'" onmouseout="msgs.innerHTML='PS4 900FW Payloads (Manual Method) Offline'" onclick="load_enableupdates(); return false">Enable Updates</button>
+
+<button class="btnkme" onMouseOver="msgs.innerHTML='Exit IDU / 9.00 Port Al Azif'" onmouseout="msgs.innerHTML='PS4 900FW Payloads (Manual Method) Offline'" onclick="load_exitidu(); return false">Exit IDU</button>
+
+<button class="btnkme" onMouseOver="msgs.innerHTML='Fake Sign-In PS4'" onmouseout="msgs.innerHTML='PS4 900FW Payloads (Manual Method) Offline'" onclick="load_np_fake_signin_ps4(); return false">Fake Sign-In PS4</button>
+
+<button class="btnkme" onMouseOver="msgs.innerHTML='Ftp v1.3 - Original Version By xVortex / 9.00 Port By Al Azif'" onmouseout="msgs.innerHTML='PS4 900FW Payloads (Manual Method) Offline'" onclick="load_ftp(); return false">FTP Server</button>
+
+<button class="btnkme" onMouseOver="msgs.innerHTML='ftpsrv ps4'" onmouseout="msgs.innerHTML='PS4 900FW Payloads (Manual Method) Offline'" onclick="load_ftpsrv_ps4_bin(); return false">ftpsrv ps4</button>
+
+<button class="btnkme" onMouseOver="msgs.innerHTML='GoldHen18.9'" onmouseout="msgs.innerHTML='PS4 900FW Payloads (Manual Method) Offline'" onclick="load_GoldHen18_9_elf(); return false">GoldHen18.9</button>
+
+<button class="btnkme" onMouseOver="msgs.innerHTML='History-Blocker - v2.0 Original Version By Stooged / 9.00 Port By Al Azif'" onmouseout="msgs.innerHTML='PS4 900FW Payloads (Manual Method) Offline'" onclick="load_historyblocker(); return false">History Blocker</button>
+
+<button class="btnkme" onMouseOver="msgs.innerHTML='Kernel-Dumper - v1.0 Original Version By Eversion / 9.00 Port By Al Azif'" onmouseout="msgs.innerHTML='PS4 900FW Payloads (Manual Method) Offline'" onclick="load_kerneldumper(); return false">Kernel Dumper</button>
+
+<button class="btnkme" onMouseOver="msgs.innerHTML='Kernel-Module Dumper -  9.00 Port By Al Azif'" onmouseout="msgs.innerHTML='PS4 900FW Payloads (Manual Method) Offline'" onclick="load_moduledumper(); return false">Kernel Module Dumper</button>
+
+<button class="btnkme" onMouseOver="msgs.innerHTML='DNS server (“NanoDNS”) for PS4.'" onmouseout="msgs.innerHTML='PS4 900FW Payloads (Manual Method) Offline'" onclick="load_nanodns(); return false">Nano DNS</button>
+
+<button class="btnkme" onMouseOver="msgs.innerHTML='Orbis Tool Box v1190 - By OSM'" onmouseout="msgs.innerHTML='PS4 900FW Payloads (Manual Method) Offline'" onclick="load_orbistoolbox(); return false">Orbis ToolBox</button>
+
+<button class="btnkme" onMouseOver="msgs.innerHTML='PGK Extractor'" onmouseout="msgs.innerHTML='PS4 900FW Payloads (Manual Method) Offline'" onclick="load_dumper(); return false">PGK Extractor</button>
+
+<button class="btnkme" onMouseOver="msgs.innerHTML='Backup Photo Gallery / 9.00 By Master'" onmouseout="msgs.innerHTML='PS4 900FW Payloads (Manual Method) Offline'" onclick="load_app2usb(); return false">Photo Backup</button>
+
+<button class="btnkme" onMouseOver="msgs.innerHTML='PS4 Xplorer 2 0 by Lapy / ELF by RajabTechs'" onmouseout="msgs.innerHTML='PS4 900FW Payloads (Manual Method) Offline'" onclick="load_PS4_Xplorer_2_0_elf(); return false">PS4 Xplorer 2.0</button>
+
+<button class="btnkme" onMouseOver="msgs.innerHTML='PS4Debug v1.1.14 - By CTN123'" onmouseout="msgs.innerHTML='PS4 900FW Payloads (Manual Method) Offline'" onclick="load_ps4debug(); return false">PS4Debug</button>
+
+<button class="btnkme" onMouseOver="msgs.innerHTML='rif renamer'" onmouseout="msgs.innerHTML='PS4 900FW Payloads (Manual Method) Offline'" onclick="load_rifrenamer(); return false">Rif Renamer</button>
+
+<button class="btnkme" onMouseOver="msgs.innerHTML='To-Dex v1.0 - By notzecoxao'" onmouseout="msgs.innerHTML='PS4 900FW Payloads (Manual Method) Offline'" onclick="load_todex(); return false">To Dex</button>
+
+<button class="btnkme" onMouseOver="msgs.innerHTML='Vue Change Icon / ELF by Master'" onmouseout="msgs.innerHTML='PS4 900FW Payloads (Manual Method) Offline'" onclick="load_VueStage1_elf(); return false">Vue LAZ305 Icon</button>
+
+<button class="btnkme" onMouseOver="msgs.innerHTML='Vue dat File 1.4 / ELF by RajabTechs'" onmouseout="msgs.innerHTML='PS4 900FW Payloads (Manual Method) Offline'" onclick="load_download0File_elf(); return false">Vue dat File</button>
+
+<button class="btnkme" onMouseOver="msgs.innerHTML='Vue Initial Files 1.03 PKG by Lapy / ELF by RajabTechs'" onmouseout="msgs.innerHTML='PS4 900FW Payloads (Manual Method) Offline'" onclick="load_VueInitialFiles1_01_elf(); return false">Vue Initial Files</button>
+
+<button class="btnkme" onMouseOver="msgs.innerHTML='Apollo Save File 1.4 / ELF by RajabTechs'" onmouseout="msgs.innerHTML='PS4 900FW Payloads (Manual Method) Offline'" onclick="load_saveFile_elf(); return false">Vue Save File</button>
+
+<button class="btnkme" onMouseOver="msgs.innerHTML='WebRTE v1.0 - By PS4 Trainer'" onmouseout="msgs.innerHTML='PS4 900FW Payloads (Manual Method) Offline'" onclick="load_webrte(); return false">WebRTE</button>
+
+<button class="btnkme" onMouseOver="msgs.innerHTML='PSN Account Offline Web Activator - By Sleirsgoevy'" onmouseout="msgs.innerHTML='PS4 900FW Payloads (Manual Method) Offline'" onclick="load_webactivator(); return false">Web Offline Activator</button>
+
+<button class="btnkme" onMouseOver="msgs.innerHTML='Zftpd v1.4.0'" onmouseout="msgs.innerHTML='PS4 900FW Payloads (Manual Method) Offline'" onclick="load_ftp_bin(); return false">Zftpd</button>
 	</p>
 	</div>
     <br><br>
@@ -294,10 +535,10 @@ LoadpaylodsGhen20(PLfile);
 }
 }
 
-function load_ftp_elf(){
-msgs.innerHTML="<h1 style='font-size:25px;text-align:center;'>Loading Zftpd v1.2.2. Please wait 20-30 seconds!!!</h1>";
-LoadedMSG="Zftpd v1.2.2 Loaded";
-PLfile = "zftpd-ps4-v1.2.2.bin";
+function load_ftp(){
+msgs.innerHTML="<h1 style='font-size:25px;text-align:center;'>Loading Ftp. Please wait 20-30 seconds!!!</h1>";
+LoadedMSG="Ftp Loaded";
+PLfile = "pl_ftp.bin";
 if (sessionStorage.plrunmethod == "sandboxesc")
 {
 loadPayloadData();
@@ -733,16 +974,47 @@ LoadpaylodsGhen20(PLfile);
 }
 }
 
-    function load_rif_renamer_bin() {
-      msgs.innerHTML = "<h1 style='font-size:25px;text-align:center;'>Loading rif renamer. Please wait 20-30 seconds!!!</h1>";
-      LoadedMSG = "rif renamer Loaded";
-      PLfile = "rif-renamer.bin";
-      if (sessionStorage.plrunmethod == "sandboxesc") {
-        loadPayloadData();
-      } else if (sessionStorage.plrunmethod == "ghen20binserver") {
-        LoadpaylodsGhen20(PLfile);
-      }
-    }
+function load_np_fake_signin_ps4(){
+msgs.innerHTML="<h1 style='font-size:25px;text-align:center;'>Loading PSN Fake Sign-In. Please wait 20-30 seconds!!!</h1>";
+LoadedMSG="PS4 Fake Sign-In Loaded";
+PLfile = "np-fake-signin-ps4.elf";
+if (sessionStorage.plrunmethod == "sandboxesc")
+{
+loadPayloadData();
+}
+else if (sessionStorage.plrunmethod == "ghen20binserver")
+{
+LoadpaylodsGhen20(PLfile);
+}
+}
+
+function load_nanodns(){
+msgs.innerHTML="<h1 style='font-size:25px;text-align:center;'>Loading NanoDNS. Please wait 20-30 seconds!!!</h1>";
+LoadedMSG="NanoDNS Loaded";
+PLfile = "nanodns-ps4.elf";
+if (sessionStorage.plrunmethod == "sandboxesc")
+{
+loadPayloadData();
+}
+else if (sessionStorage.plrunmethod == "ghen20binserver")
+{
+LoadpaylodsGhen20(PLfile);
+}
+}
+
+function load_ftp_bin(){
+msgs.innerHTML="<h1 style='font-size:25px;text-align:center;'>Loading Zftpd v1.4.0. Please wait 20-30 seconds!!!</h1>";
+LoadedMSG="zftpd v1.4.0 Loaded";
+PLfile = "zftpd-ps4-v1.4.0.bin";
+if (sessionStorage.plrunmethod == "sandboxesc")
+{
+loadPayloadData();
+}
+else if (sessionStorage.plrunmethod == "ghen20binserver")
+{
+LoadpaylodsGhen20(PLfile);
+}
+}
 
     function load_ftpsrv_ps5_bin() {
       msgs.innerHTML = "<h1 style='font-size:25px;text-align:center;'>Loading ftpsrv ps5. Please wait 20-30 seconds!!!</h1>";
@@ -756,20 +1028,9 @@ LoadpaylodsGhen20(PLfile);
     }
 
     function load_ftpsrv_ps4_bin() {
-      msgs.innerHTML = "<h1 style='font-size:25px;text-align:center;'>Loading ftpsrv ps5. Please wait 20-30 seconds!!!</h1>";
+      msgs.innerHTML = "<h1 style='font-size:25px;text-align:center;'>Loading ftpsrv ps4. Please wait 20-30 seconds!!!</h1>";
       LoadedMSG = "ftpsrv ps4 Loaded";
       PLfile = "ftpsrv-ps4.bin";
-      if (sessionStorage.plrunmethod == "sandboxesc") {
-        loadPayloadData();
-      } else if (sessionStorage.plrunmethod == "ghen20binserver") {
-        LoadpaylodsGhen20(PLfile);
-      }
-    }
-	
-	function load_Resident_Evil_4_elf() {
-      msgs.innerHTML = "<h1 style='font-size:25px;text-align:center;'>Loading Resident Evil 4. Please wait 20-30 seconds!!!</h1>";
-      LoadedMSG = "Resident Evil 4 Installed";
-      PLfile = "Resident.Evil.4.elf";
       if (sessionStorage.plrunmethod == "sandboxesc") {
         loadPayloadData();
       } else if (sessionStorage.plrunmethod == "ghen20binserver") {
@@ -779,7 +1040,7 @@ LoadpaylodsGhen20(PLfile);
 
     function load_Apollo_elf() {
       msgs.innerHTML = "<h1 style='font-size:25px;text-align:center;'>Loading Apollo. Please wait 20-30 seconds!!!</h1>";
-      LoadedMSG = "Apollo Loaded";
+      LoadedMSG = "Apollo Installed";
       PLfile = "Apollo.elf";
       if (sessionStorage.plrunmethod == "sandboxesc") {
         loadPayloadData();
@@ -788,10 +1049,10 @@ LoadpaylodsGhen20(PLfile);
       }
     }
 
-    function load_GoldHen18_9_elf() {
-      msgs.innerHTML = "<h1 style='font-size:25px;text-align:center;'>Loading GoldHen18.9. Please wait 20-30 seconds!!!</h1>";
-      LoadedMSG = "GoldHen18.9 Loaded";
-      PLfile = "GoldHen18.9.elf";
+    function load_VueInitialFiles1_01_elf() {
+      msgs.innerHTML = "<h1 style='font-size:25px;text-align:center;'>Loading Vue Initial Files 1.02. Please wait 20-30 seconds!!!</h1>";
+      LoadedMSG = "Vue Initial Files Installed";
+      PLfile = "VueInitialFiles1.03.elf";
       if (sessionStorage.plrunmethod == "sandboxesc") {
         loadPayloadData();
       } else if (sessionStorage.plrunmethod == "ghen20binserver") {
@@ -799,10 +1060,10 @@ LoadpaylodsGhen20(PLfile);
       }
     }
 	
-	    function load_VueInitialFiles1_01_elf() {
-      msgs.innerHTML = "<h1 style='font-size:25px;text-align:center;'>Loading Vue Initial Files 1.03. Please wait 20-30 seconds!!!</h1>";
-      LoadedMSG = "Vue Initial Files Installed";
-      PLfile = "VueInitialFiles1.03.elf";
+    function load_GoldHen18_9_elf() {
+      msgs.innerHTML = "<h1 style='font-size:25px;text-align:center;'>Loading GoldHen18.9. Please wait 20-30 seconds!!!</h1>";
+      LoadedMSG = "GoldHen18.9 Loaded";
+      PLfile = "GoldHen18.9.elf";
       if (sessionStorage.plrunmethod == "sandboxesc") {
         loadPayloadData();
       } else if (sessionStorage.plrunmethod == "ghen20binserver") {
@@ -822,9 +1083,9 @@ LoadpaylodsGhen20(PLfile);
     }
 
     function load_VueStage1_elf() {
-      msgs.innerHTML = "<h1 style='font-size:25px;text-align:center;'>Loading Vue Stage 1. Please wait 20-30 seconds!!!</h1>";
-      LoadedMSG = "Vue Stage 1 Loaded";
-      PLfile = "VueStage1.elf";
+      msgs.innerHTML = "<h1 style='font-size:25px;text-align:center;'>Loading Vue Icon Change. Please wait 20-30 seconds!!!</h1>";
+      LoadedMSG = "Vue Icon Change Loaded";
+      PLfile = "laz305_vue_icon.elf";
       if (sessionStorage.plrunmethod == "sandboxesc") {
         loadPayloadData();
       } else if (sessionStorage.plrunmethod == "ghen20binserver") {

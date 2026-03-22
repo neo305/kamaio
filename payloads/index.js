@@ -81,20 +81,7 @@ function loadScript(name)
 	getScript(name,function(){});
 }
 
-//Payloads to be loaded over SandBox Escape using Sleirsgoevy Style
-function loadPayloadDataSleirs(pl) // preload payload data
-{
-    
-	setTimeout(loadScript("netcat.js")
-	+loadScript("malloc.js")
-	+loadScript("rop_sleirs.js")
-	+loadScript("syscalls.js")
-	+loadScript("syscalls2.js")
-	+loadScript(pl)
-	+loadScript("mira.js")
-	+loadScript("relocator.js"),1500);
-	pldone();
-}
+
 
   //Payloads to be loaded over GoldHEN Bin Server method
   function LoadpaylodsGhen20(PLfile){ //Loading Payload via Payload Param.
