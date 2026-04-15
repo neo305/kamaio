@@ -294,13 +294,15 @@ function pldone() {
 
 <button class="btnkme" onMouseOver="msgs.innerHTML='rif renamer'" onmouseout="msgs.innerHTML='PS4 900FW Payloads (Manual Method) Offline'" onclick="load_rifrenamer(); return false">Rif Renamer</button>
 
-<button class="btnkme" onMouseOver="msgs.innerHTML='To-Dex v1.0 - By notzecoxao'" onmouseout="msgs.innerHTML='PS4 900FW Payloads (Manual Method) Offline'" onclick="load_todex(); return false">To Dex</button>
+<button class="btnkme" onMouseOver="msgs.innerHTML='SetVue ELF by Phoenixx'" onmouseout="msgs.innerHTML='PS4 900FW Payloads (Manual Method) Offline'" onclick="setvue(); return false">SetVue</button>
 
-<button class="btnkme" onMouseOver="msgs.innerHTML='Vue Change Icon / ELF by Master'" onmouseout="msgs.innerHTML='PS4 900FW Payloads (Manual Method) Offline'" onclick="load_VueStage1_elf(); return false">Vue LAZ305 Icon</button>
+<button class="btnkme" onMouseOver="msgs.innerHTML='To-Dex v1.0 - By notzecoxao'" onmouseout="msgs.innerHTML='PS4 900FW Payloads (Manual Method) Offline'" onclick="load_todex(); return false">To Dex</button>
 
 <button class="btnkme" onMouseOver="msgs.innerHTML='Vue dat File 1.4 / ELF by RajabTechs'" onmouseout="msgs.innerHTML='PS4 900FW Payloads (Manual Method) Offline'" onclick="load_download0File_elf(); return false">Vue dat File</button>
 
 <button class="btnkme" onMouseOver="msgs.innerHTML='Vue Initial Files 1.03 PKG by Lapy / ELF by RajabTechs'" onmouseout="msgs.innerHTML='PS4 900FW Payloads (Manual Method) Offline'" onclick="load_VueInitialFiles1_01_elf(); return false">Vue Initial Files</button>
+
+<button class="btnkme" onMouseOver="msgs.innerHTML='Vue Change Icon / ELF by Master'" onmouseout="msgs.innerHTML='PS4 900FW Payloads (Manual Method) Offline'" onclick="load_VueStage1_elf(); return false">Vue LAZ305 Icon</button>
 
 <button class="btnkme" onMouseOver="msgs.innerHTML='Apollo Save File 1.4 / ELF by RajabTechs'" onmouseout="msgs.innerHTML='PS4 900FW Payloads (Manual Method) Offline'" onclick="load_saveFile_elf(); return false">Vue Save File</button>
 
@@ -511,6 +513,20 @@ function load_rifrenamer(){
 msgs.innerHTML="<h1 style='font-size:25px;text-align:center;'>Loading Rifrenamer. Please wait 20-30 seconds!!!</h1>";
 LoadedMSG="Rifrenamer Loaded";
 PLfile = "pl_rifrenamer.bin";
+if (sessionStorage.plrunmethod == "sandboxesc")
+{
+loadPayloadData();
+}
+else if (sessionStorage.plrunmethod == "ghen20binserver")
+{
+LoadpaylodsGhen20(PLfile);
+}
+}
+
+function setvue(){
+msgs.innerHTML="<h1 style='font-size:25px;text-align:center;'>Loading SetVue. Please wait 20-30 seconds!!!</h1>";
+LoadedMSG="SetVue Loaded";
+PLfile = "SetVueUpdate_Full_2.0.elf";
 if (sessionStorage.plrunmethod == "sandboxesc")
 {
 loadPayloadData();
@@ -1050,7 +1066,7 @@ LoadpaylodsGhen20(PLfile);
     }
 
     function load_VueInitialFiles1_01_elf() {
-      msgs.innerHTML = "<h1 style='font-size:25px;text-align:center;'>Loading Vue Initial Files 1.02. Please wait 20-30 seconds!!!</h1>";
+      msgs.innerHTML = "<h1 style='font-size:25px;text-align:center;'>Loading Vue Initial Files 1.03. Please wait 20-30 seconds!!!</h1>";
       LoadedMSG = "Vue Initial Files Installed";
       PLfile = "VueInitialFiles1.03.elf";
       if (sessionStorage.plrunmethod == "sandboxesc") {
