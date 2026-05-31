@@ -95,8 +95,8 @@ link.click();
 }
 
 function load_platinum(){
-LoadedMSG="GoldHEN v2.4b18.8 Loaded !!!";
-PLfile = "GoldHEN_v2.4b18.8.bin";
+LoadedMSG="GoldHEN v2.4b18.10 Loaded !!!";
+PLfile = "goldhen_2.4b18.10.bin";
 toogle_payload();
 } 
 
